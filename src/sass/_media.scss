@@ -21,6 +21,56 @@
 //Small: ≥576px
 @include media-breakpoint-down(sm) {
 
+  .header {
+    background-position-x: 80%;
+    height: 500px;
+    &__title {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+  
+  .main {
+    &-title {
+      font-size: 22px;
+      text-align: center;
+      &::after {
+        padding-top: 15px;
+        margin: 0 auto;
+      }
+    }
+    &-content {
+      text-align: center;
+      padding: 0 15px;
+    }
+    &-button {
+      width: 100%;
+    }
+  }
+
+  .interaction {
+    height: 390px;
+    &__wrapper {
+      display: none;
+    }
+  }
+
+  .request {
+    input {
+      margin-bottom: 15px;
+    }
+    &__form {
+      input {
+        width: 100% ;
+      }
+    }
+    &__info {
+      text-align: center;
+    }
+  }
+  .footer {
+    display: none;
+  }
 }
 
 //Extra small: >0
