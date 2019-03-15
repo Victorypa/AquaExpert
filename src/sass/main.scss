@@ -13,9 +13,9 @@
 
 html, body {
 	height: 100%;
-			* {
-			outline: 1px solid red;
-		}
+		// 	* {
+		// 	outline: 1px solid red;
+		// }
 }
 
 body {
@@ -78,8 +78,7 @@ a {
 	}
 	&-menu {
 		display: flex;
-		
-
+	
 		list-style: none;
 		padding: 0;
 		margin: 0;
@@ -87,6 +86,9 @@ a {
 		margin-left: 30px;
 		a {
 			color: #262626;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 		}
 	}
@@ -106,6 +108,10 @@ a {
 		padding-top: 125px;
 		font-weight: bold;
 		font-size: 52px;
+	}
+	&__lang {
+		display: flex;
+		align-items: center;
 	}
 }
 
@@ -142,7 +148,8 @@ a {
 		font-size: 13px;
 		padding-top: 30px;
 		line-height: 21px;
-		span {	
+		a {	
+			color: #1DA1EC;
 			text-decoration: underline;
 		}
 	}
@@ -216,6 +223,7 @@ a {
 }
 
 .mobile {
+	display: none;
 
 	&__contacts {
 		justify-content: space-between;
@@ -249,6 +257,7 @@ a {
 		z-index: 1001;
 	}
 	&__lang {
+
 		font-size: 10px;
 	}
 
@@ -309,5 +318,12 @@ a {
 	}
 }
 
-
+.container-fluid {
+	&.px-0 {
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}
 @import "media"; // Always at the end

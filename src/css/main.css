@@ -40,8 +40,6 @@
 
 html, body {
   height: 100%; }
-  html *, body * {
-    outline: 1px solid red; }
 
 body {
   font-size: 16px;
@@ -112,6 +110,8 @@ a {
       margin-left: 30px; }
       .header-menu__item a {
         color: #262626; }
+        .header-menu__item a:hover {
+          text-decoration: underline; }
   .header__contacts {
     text-align: right; }
     .header__contacts a {
@@ -125,6 +125,15 @@ a {
     padding-top: 125px;
     font-weight: bold;
     font-size: 52px; }
+  .header__lang {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .interaction {
   background-image: url("../img/Image3.jpg");
@@ -172,7 +181,8 @@ a {
     font-size: 13px;
     padding-top: 30px;
     line-height: 21px; }
-    .request__info span {
+    .request__info a {
+      color: #1DA1EC;
       text-decoration: underline; }
 
 .main-button {
@@ -237,44 +247,41 @@ a {
     top: 5%;
     z-index: 1000; }
 
-.mobile__contacts {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #fff;
-  z-index: 1001; }
-
-.mobile__phone {
-  font-weight: bold;
-  font-size: 14px; }
-
-.mobile__mail {
-  font-weight: normal;
-  font-size: 10px;
-  line-height: normal; }
-
-.mobile__logo {
-  width: 124px; }
-
-.mobile__burger {
-  height: 50px;
-  position: relative;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #EAE8E8;
-  z-index: 1001; }
-  .mobile__burger.active {
-    background-color: #fff; }
-
-.mobile__lang {
-  font-size: 10px; }
+.mobile {
+  display: none; }
+  .mobile__contacts {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #fff;
+    z-index: 1001; }
+  .mobile__phone {
+    font-weight: bold;
+    font-size: 14px; }
+  .mobile__mail {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: normal; }
+  .mobile__logo {
+    width: 124px; }
+  .mobile__burger {
+    height: 50px;
+    position: relative;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #EAE8E8;
+    z-index: 1001; }
+    .mobile__burger.active {
+      background-color: #fff; }
+  .mobile__lang {
+    font-size: 10px; }
 
 .burger {
   width: 40px;
@@ -317,6 +324,10 @@ a {
       -webkit-transform: rotate(-135deg);
           -ms-transform: rotate(-135deg);
               transform: rotate(-135deg); }
+
+.container-fluid.px-0 .row {
+  margin-left: 0;
+  margin-right: 0; }
 
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
@@ -3774,6 +3785,8 @@ html {
     .header__top {
       display: none; }
   .burger {
+    display: block; }
+  .mobile {
     display: block; }
   .mobile-menu .user-nav__logo {
     width: 124px; }

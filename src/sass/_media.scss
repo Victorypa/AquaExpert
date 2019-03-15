@@ -36,6 +36,9 @@
   .burger {
     display: block;
   }
+  .mobile {
+    display: block;
+  }
 
   .mobile-menu {
     .user-nav {
@@ -45,7 +48,6 @@
     }
   }
   
-
   .main {
     &-title {
       font-size: 22px;
