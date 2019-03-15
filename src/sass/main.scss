@@ -13,9 +13,9 @@
 
 html, body {
 	height: 100%;
-	//   * {
-  //   outline: 1px solid red;
-  // }
+			* {
+			outline: 1px solid red;
+		}
 }
 
 body {
@@ -174,39 +174,43 @@ a {
 }
 
 .mobile-menu {
-	display: none;
 	width: 100%;
 
 	position: absolute;
-	top:0;
-    left: 0;
-    right: 0;
-	// top: -100%;
+	// top: 5%;
+	left: 0;
+	right: 0;
+	top: -100%;
 
 	background-color: #fff;
 	
 	z-index: 998;
 	@include transition-animation;
-	.user-nav {			
+	.user-nav {	
 		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-
+    flex-direction: column;
+    justify-content: center;
+		
 		margin: 0;
 		padding: 0;
+
+		padding-top: 70px;
 
 		list-style: none;
 		@include img100;
 
-
 		&__link {
 			display: block;		
 			padding: 20px;
-
+			&--callorder {
+				color: #1DA1EC;
+				text-decoration: underline;
+				border-top: 1px solid #E2E2E2;
+			}
 		}
 	}
 	&.show {
-		top: 0;
+		top: 5%;
 		z-index: 1000;
 	}		
 }
@@ -216,6 +220,7 @@ a {
 	&__contacts {
 		justify-content: space-between;
 		background-color: #fff;
+		z-index: 1001;
 	}
 	&__phone {
 		font-weight: bold;
@@ -224,8 +229,8 @@ a {
 
 	&__mail {
 		font-weight: normal;
-font-size: 10px;
-line-height: normal;
+		font-size: 10px;
+		line-height: normal;
 	}
 
 	&__logo {
@@ -237,10 +242,16 @@ line-height: normal;
 		justify-content: space-between;
 		align-items: center;
 		background-color: #EAE8E8;
+		&.active {
+			background-color: #fff;
+		}
+
+		z-index: 1001;
 	}
 	&__lang {
 		font-size: 10px;
 	}
+
 
 }
 .burger {

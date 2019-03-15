@@ -40,6 +40,8 @@
 
 html, body {
   height: 100%; }
+  html *, body * {
+    outline: 1px solid red; }
 
 body {
   font-size: 16px;
@@ -194,12 +196,11 @@ a {
   opacity: 0.7; }
 
 .mobile-menu {
-  display: none;
   width: 100%;
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
+  top: -100%;
   background-color: #fff;
   z-index: 998;
   -webkit-transition: 0.2s ease-in;
@@ -215,19 +216,25 @@ a {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     padding: 0;
+    padding-top: 70px;
     list-style: none;
     width: 100%;
     height: 100%; }
     .mobile-menu .user-nav__link {
       display: block;
       padding: 20px; }
+      .mobile-menu .user-nav__link--callorder {
+        color: #1DA1EC;
+        text-decoration: underline;
+        border-top: 1px solid #E2E2E2; }
   .mobile-menu.show {
-    top: 0;
+    top: 5%;
     z-index: 1000; }
 
 .mobile__contacts {
@@ -235,7 +242,8 @@ a {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 1001; }
 
 .mobile__phone {
   font-weight: bold;
@@ -260,7 +268,10 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #EAE8E8; }
+  background-color: #EAE8E8;
+  z-index: 1001; }
+  .mobile__burger.active {
+    background-color: #fff; }
 
 .mobile__lang {
   font-size: 10px; }
