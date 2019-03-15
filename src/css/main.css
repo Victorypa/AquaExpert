@@ -129,7 +129,7 @@ a {
         -ms-flex-align: center;
             align-items: center; }
   .header__logo {
-    width: 155px;
+    width: 135px;
     height: 40px; }
     .header__logo img {
       width: 100%;
@@ -235,11 +235,15 @@ a {
   width: 163px;
   font-weight: 600;
   padding: 10px;
-  background-color: #1DA1EC; }
+  background-color: #1DA1EC;
+  border: none; }
   .main-button--width {
     width: 261px; }
+  .main-button:hover {
+    background-color: #56C2FF; }
 
 .main-title {
+  font-family: "Montserrat-Bold";
   font-weight: bold;
   font-size: 40px; }
   .main-title::after {
@@ -248,6 +252,7 @@ a {
     width: 97px; }
 
 .main-content {
+  font-family: "OpenSans";
   text-align: justify;
   opacity: 0.7; }
 
@@ -3821,9 +3826,13 @@ html {
   height: 100vh !important; }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 991.98px) {
+  .main-button--width {
+    width: 100%; } }
+
 @media (max-width: 767.98px) {
   .header {
-    background-position-x: 80%;
+    background-position-x: 85%;
     height: 500px; }
     .header__title {
       padding-top: 40px;
@@ -3831,6 +3840,11 @@ html {
       text-align: center; }
     .header__top {
       display: none; }
+    .header__lang {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
   .burger {
     display: block; }
   .mobile {
@@ -3846,8 +3860,6 @@ html {
   .main-content {
     text-align: center;
     padding: 0 15px; }
-  .main-button {
-    width: 100%; }
   .interaction {
     height: 390px; }
     .interaction__wrapper {

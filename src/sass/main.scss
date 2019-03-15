@@ -71,7 +71,7 @@ a {
 		align-items: center;
 	}
 	&__logo {
-		width: 155px;
+		width: 135px;
 		height: 40px;
 		img {
 			@include img100;
@@ -175,12 +175,19 @@ a {
 	font-weight: 600;
 	padding: 10px;
 	background-color: #1DA1EC;
+	border: none;
+	
 	&--width {
 		width: 261px;
 	}
+	&:hover {
+		background-color: #56C2FF;
+	}
+
 }
 
 .main-title {
+	font-family: $montserrat;
 	font-weight: bold;
 	font-size: 40px;
 	&::after {
@@ -191,6 +198,7 @@ a {
 }
 
 .main-content {
+	font-family: $opensans;
 	text-align: justify;
 	opacity: 0.7;
 }
