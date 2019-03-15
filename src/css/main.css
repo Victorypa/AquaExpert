@@ -12,6 +12,41 @@
   src: url("../fonts/RobotoBold/RobotoBold.eot");
   src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "OpenSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans/Regular/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans/Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/Regular/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/Regular/OpenSans-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/OpenSans/Regular/OpenSans-SemiBold.eot");
+  src: url("../fonts/OpenSans/Regular/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/Regular/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans/Regular/OpenSans-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Montserrat/Bold/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat/Bold/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Bold/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Bold/Montserrat-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.eot");
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.woff") format("woff"), url("../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Decor PERSONAL USE";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/KrinkesDecorPersonalUse/KrinkesDecorPERSONALUSE.eot");
+  src: url("../fonts/KrinkesDecorPersonalUse/KrinkesDecorPERSONALUSE.eot?#iefix") format("embedded-opentype"), url("../fonts/KrinkesDecorPersonalUse/KrinkesDecorPERSONALUSE.woff") format("woff"), url("../fonts/KrinkesDecorPersonalUse/KrinkesDecorPERSONALUSE.ttf") format("truetype"); }
+
 ::-webkit-input-placeholder {
   color: #ccc;
   -webkit-transition: 0.2s ease-in;
@@ -84,6 +119,7 @@ a {
   background-position: center center;
   height: 900px; }
   .header__top {
+    font-family: "OpenSans";
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -118,9 +154,11 @@ a {
       display: block;
       color: #262626; }
   .header__phone {
+    font-family: "Montserrat-Bold";
     font-weight: bold;
     font-size: 20px; }
   .header__title {
+    font-family: "Montserrat-Bold";
     line-height: normal;
     padding-top: 125px;
     font-weight: bold;
@@ -133,7 +171,15 @@ a {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    cursor: pointer; }
+  .header__arrow {
+    width: 11px;
+    height: 6px; }
+    .header__arrow img {
+      width: 100%;
+      height: 100%;
+      display: block; }
 
 .interaction {
   background-image: url("../img/Image3.jpg");
@@ -3780,6 +3826,7 @@ html {
     background-position-x: 80%;
     height: 500px; }
     .header__title {
+      padding-top: 40px;
       font-size: 22px;
       text-align: center; }
     .header__top {
