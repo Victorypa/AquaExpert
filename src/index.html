@@ -20,8 +20,38 @@
 </head>
 
 <body>
-    <header class="header py-3">
+    <header class="header py-lg-3">
         <div class="container">
+            <div class="mobile">
+
+                <div class="row mobile__contacts align-items-center py-2">
+                    <a href="tel:+7 (985) 392 50 72" class="col-6 mobile__phone">+7 (985) 392 50 72</a>
+
+                    <a href="mailto:aquaexport2018@gmail.com"
+                        class="col-6 mobile__mail text-right">aquaexport2018@gmail.com</a>
+                </div>
+
+
+                <div class="row mobile__burger">
+
+
+
+                    <a class="burger" href="#">
+                        <span></span>
+                    </a>
+
+
+
+
+
+                    <a href="#" class="col-4 mobile__logo ml-auto">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                    <div class="col-4 mobile__lang text-right">
+                        RU
+                    </div>
+                </div>
+            </div>
             <div class="row header__top">
                 <a href="#" class="header__logo">
                     <img src="img/logo.svg" alt="logo">
@@ -42,20 +72,44 @@
                 <div class="header__lang">
                     RU
                 </div>
+
+
+
             </div>
+
             <div class="row">
-                <h1 class="col-md-6 header__title">
-                    Мы создаем новые возможности!
+                <h1 class="col-lg-6 header__title">
+                    Мы создаем <br> новые возможности!
                 </h1>
             </div>
-        </div>
 
+
+
+
+            <div class="mobile-menu">
+
+
+                <ul class="user-nav">
+
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">Сотрудничество</a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">Обратная связь</a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">Заказать звонок</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
     </header>
 
     <section class="about py-5">
         <div class="container-fluid px-0">
             <div class="row">
-                <div class="col-md-4 offset-md-2">
+                <div class="col-lg-4 offset-lg-2">
                     <h2 class="main-title">О компании</h2>
                     <p class="main-content">Наша компания оказывает содействие производителям бутилированной питьевой
                         воды из России в выходе на новые рынки сбыта.</p>
@@ -65,7 +119,7 @@
                         деятельности человека и роста народонаселения ряд регионов мира будут испытывать все большую
                         потребность в чистой питьевой воде.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="about__img">
                         <img class="img-responsive" src="img/Image2.jpg" alt="image2">
                     </div>
@@ -74,27 +128,27 @@
             </div>
         </div>
     </section>
-<section class="interaction__mobile">
+    <section class="interaction__mobile">
         <div class="interaction__wrapper--mobile">
-                <h2 class="main-title">Сотрудничество</h2>
-                <p class="main-content">Мы предлагаем производителям бутилированной воды гибкие/разные формы
-                    сотрудничества, соединяя желание экспортировать и готовность потребителей покупать чистую
-                    бутилированную воду.</p>
-            </div>
-</section>
+            <h2 class="main-title">Сотрудничество</h2>
+            <p class="main-content">Мы предлагаем производителям бутилированной воды гибкие/разные формы
+                сотрудничества, соединяя желание экспортировать и готовность потребителей покупать чистую
+                бутилированную воду.</p>
+        </div>
+    </section>
 
 
     <section class="interaction py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 offset-md-6 ">
+                <div class="col-lg-6 offset-lg-6 ">
                     <div class="interaction__wrapper">
                         <h2 class="main-title">Сотрудничество</h2>
                         <p class="main-content">Мы предлагаем производителям бутилированной воды гибкие/разные формы
                             сотрудничества, соединяя желание экспортировать и готовность потребителей покупать чистую
                             бутилированную воду.</p>
                     </div>
-       
+
 
 
                 </div>
@@ -106,19 +160,25 @@
     <section class="request py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h2 class="main-title">Оставить заявку</h2>
                     <p class="main-content">Оставьте заявку и получите подробную информацию о наших решениях для
                         Ваших
                         потребностей.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="request__form">
-                        <input type="name" class="" placeholder="Имя*" title="Введите имя" required>
-                        <input type="tel" class="" placeholder="Телефон*" title="Введите номер телефона" required>
-                        <input type="email" class="" placeholder="Электронная почта*" title="Введите e-mail"
-                            required>
-                        <input type="text" class="" placeholder="Компания*" title="Название компании" required>
+                        <div class="col-lg-6 px-0">
+                            <input type="name" class="" placeholder="Имя*" title="Введите имя" required>
+                            <input type="tel" class="" placeholder="Телефон*" title="Введите номер телефона" required>
+                        </div>
+                        <div class="col-lg-6 px-0">
+                            <input type="email" class="" placeholder="Электронная почта*" title="Введите e-mail"
+                                required>
+                            <input type="text" class="" placeholder="Компания*" title="Название компании" required>
+                        </div>
+
+
                     </div>
 
                     <input type="text" class="w-100" placeholder="Должность*" title="Ваша должность" required>

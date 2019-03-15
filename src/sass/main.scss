@@ -102,6 +102,7 @@ a {
 		font-size: 20px;
 	}
 	&__title {
+		line-height: normal;
 		padding-top: 125px;
 		font-weight: bold;
 		font-size: 52px;
@@ -115,6 +116,9 @@ a {
 		padding: 20px 30px;
 		background-color: #fff;
 		margin-top: 40px;
+		&--mobile {
+			display: none;
+		}
 	}
 }
 
@@ -127,8 +131,10 @@ a {
 	&__form {
 		display: flex;
 		flex-wrap: wrap;
+		
 	}
 	input {
+		width: 100%;
 		border-radius: 3px;
 		margin-bottom: 30px;
 	}
@@ -165,6 +171,131 @@ a {
 .main-content {
 	text-align: justify;
 	opacity: 0.7;
+}
+
+.mobile-menu {
+	display: none;
+	width: 100%;
+
+	position: absolute;
+	top:0;
+    left: 0;
+    right: 0;
+	// top: -100%;
+
+	background-color: #fff;
+	
+	z-index: 998;
+	@include transition-animation;
+	.user-nav {			
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+		@include img100;
+
+
+		&__link {
+			display: block;		
+			padding: 20px;
+
+		}
+	}
+	&.show {
+		top: 0;
+		z-index: 1000;
+	}		
+}
+
+.mobile {
+
+	&__contacts {
+		justify-content: space-between;
+		background-color: #fff;
+	}
+	&__phone {
+		font-weight: bold;
+		font-size: 14px;
+	}
+
+	&__mail {
+		font-weight: normal;
+font-size: 10px;
+line-height: normal;
+	}
+
+	&__logo {
+		width: 124px;
+	}
+	&__burger {
+		height: 50px;
+		position: relative;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #EAE8E8;
+	}
+	&__lang {
+		font-size: 10px;
+	}
+
+}
+.burger {
+
+	// display: none;
+
+	width: 40px;
+	height: 40px;
+
+	position: absolute;
+	left: 15px;
+
+	border-radius: 50%;
+
+
+	z-index: 999;
+	span, span::before, span::after {
+		content: '';
+		display: block;
+
+		height: 2px;
+		width: 18px;
+
+		position: absolute;
+		left: 50%;
+		top: 50%;
+
+		margin-left: -9px;
+		margin-top: -1px;
+
+		background-color: #1DA1EC;
+	}
+	span::before {
+		margin-top: -6px;
+
+		transition: all 0.2s;
+	}
+	span::after {
+		margin-top: 4px;
+
+		transition: all 0.2s;
+	}
+	&-active span{
+		background-color: transparent;
+		&::before {
+			margin-top: 0;
+
+			transform:rotate(135deg);		
+		}
+		&::after {
+			margin-top: 0;
+
+			transform:rotate(-135deg);			
+		}
+	}
 }
 
 
