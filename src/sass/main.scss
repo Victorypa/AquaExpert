@@ -13,9 +13,9 @@
 
 html, body {
 	height: 100%;
-	  * {
-    outline: 1px solid red;
-  }
+	//   * {
+  //   outline: 1px solid red;
+  // }
 }
 
 body {
@@ -72,6 +72,9 @@ a {
 	&__logo {
 		width: 155px;
 		height: 40px;
+		img {
+			@include img100;
+		}
 	}
 	&-menu {
 		display: flex;
@@ -109,19 +112,29 @@ a {
 	@include bgimage(Image3);
 	height: 670px;
 	&__wrapper {
+		padding: 20px 30px;
 		background-color: #fff;
 		margin-top: 40px;
 	}
 }
 
 .request {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #EAE8E8;
 	min-height: 575px;
 	&__form {
-
+		display: flex;
+		flex-wrap: wrap;
+	}
+	input {
+		border-radius: 3px;
+		margin-bottom: 30px;
 	}
 	&__info {
 		font-size: 13px;
+		padding-top: 30px;
 		line-height: 21px;
 		span {	
 			text-decoration: underline;
@@ -130,9 +143,13 @@ a {
 }
 
 .main-button {
+	width: 163px;
 	font-weight: 600;
 	padding: 10px;
 	background-color: #1DA1EC;
+	&--width {
+		width: 261px;
+	}
 }
 
 .main-title {
@@ -146,11 +163,9 @@ a {
 }
 
 .main-content {
+	text-align: justify;
 	opacity: 0.7;
 }
 
-.p-30 {
-	padding: 30px;
-}
 
 @import "media"; // Always at the end
