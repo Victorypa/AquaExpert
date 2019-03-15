@@ -1,0 +1,130 @@
+@import "vars";
+@import "fonts";
+
+::placeholder {
+	color: #ccc;
+	@include transition-animation;
+}
+	
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+html, body {
+	height: 100%;
+	  * {
+    outline: 1px solid red;
+  }
+}
+
+body {
+	font-size: $def-fnz;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	color: $text-color;
+	overflow-x: hidden;
+	
+}
+
+input, textarea {
+	border: 1px solid #ccc;
+	padding: 10px;
+	outline: none;
+	@include transition-animation;
+	&:focus:required:invalid {
+		border-color: red;
+	}
+	&:required:valid {
+		border-color: green;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $text-color;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+	
+.text-center {
+	text-align: center;
+}
+
+
+
+.header {
+	color: #262626;
+	@include bgimage(Image1);
+	height: 900px;
+	&__top {
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		width: 155px;
+		height: 40px;
+	}
+	&-menu {
+		display: flex;
+		
+
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		&__item {
+		margin-left: 15px;
+		a {
+			color: #262626;
+		}
+		}
+	}
+	&__contacts {
+		text-align: right;
+		a {
+			display: block;
+			color: #262626;
+		}
+	}
+	&__phone {
+		font-weight: bold;
+		font-size: 20px;
+	}
+	&__title {
+		padding-top: 125px;
+		font-weight: bold;
+		font-size: 52px;
+// max-width: 630px;
+
+	}
+}
+
+
+.main-button {
+	font-weight: 600;
+	padding: 10px;
+	background-color: #1DA1EC;
+}
+
+.about {
+	&__title {
+	font-weight: bold;
+	font-size: 40px;
+	&::after {
+		content: url('../img/wave.svg');
+		display: block;
+		width: 97px;
+		}
+	}
+}
+
+@import "media"; // Always at the end

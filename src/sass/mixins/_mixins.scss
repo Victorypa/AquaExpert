@@ -1,0 +1,24 @@
+@mixin transition-animation {
+  transition: 0.2s ease-in;
+}
+
+@mixin bgimage($name) {
+$url:"../img/#{$name}.jpg";
+background-image: url($url);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+@mixin img100 {
+width: 100%;
+height: 100%;
+}
+
+@mixin button-bg($bg) {
+background-color: $bg;
+&:hover {
+  background:darken($bg,8%);
+  @include transition-animation;
+}
+}
