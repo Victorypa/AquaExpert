@@ -133,6 +133,15 @@ a {
     background-color: #fff;
     margin-top: 40px; }
 
+.request {
+  background-color: #EAE8E8;
+  min-height: 575px; }
+  .request__info {
+    font-size: 13px;
+    line-height: 21px; }
+    .request__info span {
+      text-decoration: underline; }
+
 .main-button {
   font-weight: 600;
   padding: 10px;

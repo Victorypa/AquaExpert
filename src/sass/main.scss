@@ -105,19 +105,27 @@ a {
 	}
 }
 
-// .about {
-// 	&__title {
-
-
-// 	}
-// }
-
 .interaction {
 	@include bgimage(Image3);
 	height: 670px;
 	&__wrapper {
 		background-color: #fff;
 		margin-top: 40px;
+	}
+}
+
+.request {
+	background-color: #EAE8E8;
+	min-height: 575px;
+	&__form {
+
+	}
+	&__info {
+		font-size: 13px;
+		line-height: 21px;
+		span {	
+			text-decoration: underline;
+		}
 	}
 }
 
