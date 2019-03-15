@@ -79,7 +79,6 @@ a {
   text-align: center; }
 
 .header {
-  color: #262626;
   background-image: url("../img/Image1.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -107,7 +106,7 @@ a {
     padding: 0;
     margin: 0; }
     .header-menu__item {
-      margin-left: 15px; }
+      margin-left: 30px; }
       .header-menu__item a {
         color: #262626; }
   .header__contacts {
@@ -123,18 +122,35 @@ a {
     font-weight: bold;
     font-size: 52px; }
 
+.interaction {
+  background-image: url("../img/Image3.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+  height: 670px; }
+  .interaction__wrapper {
+    background-color: #fff;
+    margin-top: 40px; }
+
 .main-button {
   font-weight: 600;
   padding: 10px;
   background-color: #1DA1EC; }
 
-.about__title {
+.main-title {
   font-weight: bold;
   font-size: 40px; }
-  .about__title::after {
+  .main-title::after {
     content: url("../img/wave.svg");
     display: block;
     width: 97px; }
+
+.main-content {
+  opacity: 0.7; }
+
+.p-30 {
+  padding: 30px; }
 
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)

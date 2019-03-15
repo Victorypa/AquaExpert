@@ -63,7 +63,6 @@ a {
 
 
 .header {
-	color: #262626;
 	@include bgimage(Image1);
 	height: 900px;
 	&__top {
@@ -82,7 +81,7 @@ a {
 		padding: 0;
 		margin: 0;
 		&__item {
-		margin-left: 15px;
+		margin-left: 30px;
 		a {
 			color: #262626;
 		}
@@ -103,11 +102,24 @@ a {
 		padding-top: 125px;
 		font-weight: bold;
 		font-size: 52px;
-// max-width: 630px;
-
 	}
 }
 
+// .about {
+// 	&__title {
+
+
+// 	}
+// }
+
+.interaction {
+	@include bgimage(Image3);
+	height: 670px;
+	&__wrapper {
+		background-color: #fff;
+		margin-top: 40px;
+	}
+}
 
 .main-button {
 	font-weight: 600;
@@ -115,8 +127,7 @@ a {
 	background-color: #1DA1EC;
 }
 
-.about {
-	&__title {
+.main-title {
 	font-weight: bold;
 	font-size: 40px;
 	&::after {
@@ -124,7 +135,14 @@ a {
 		display: block;
 		width: 97px;
 		}
-	}
+}
+
+.main-content {
+	opacity: 0.7;
+}
+
+.p-30 {
+	padding: 30px;
 }
 
 @import "media"; // Always at the end
