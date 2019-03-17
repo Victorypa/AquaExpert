@@ -53,6 +53,7 @@
 
   .tablet-container {
     max-width: 100%;
+    
   }
 }
 
@@ -93,6 +94,7 @@
   .interaction {
     height: 450px;
   }
+  
 
 }
 
@@ -129,6 +131,17 @@
       &__logo {
         width: 124px;
       }
+    }
+  }
+
+  .check-lang {
+    font-size: 10px;
+    &__dropdown {
+      font-size: 10px;
+      left: 50%;  
+    }
+    &__arrow {
+      margin-left: 2px;
     }
   }
 

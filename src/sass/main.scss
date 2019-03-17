@@ -119,7 +119,7 @@ a {
 .check-lang {
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: center;
 	cursor: pointer;
 	// &::after {
 	// 	content: url('../img/strelka.svg');
@@ -131,7 +131,7 @@ a {
 		width: 65px;
 	}
 	&__arrow {
-		width: 16px;
+		width: 10px;
 		margin-left: 5px;
 
 		&.active {
@@ -271,12 +271,13 @@ a {
 
 .mobile-menu {
 	width: 100%;
-
+	transform-origin: top;
+	transform: scaleY(0);
 	position: absolute;
 	// top: 5%;
 	left: 0;
 	right: 0;
-	top: -100%;
+	// top: -100%;
 
 	background-color: #fff;
 	
@@ -289,8 +290,6 @@ a {
 		
 		margin: 0;
 		padding: 0;
-
-		padding-top: 70px;
 
 		list-style: none;
 		@include img100;
@@ -306,7 +305,9 @@ a {
 		}
 	}
 	&.show {
-		top: 5%;
+		// top: 5%;
+		transform-origin: top;
+		transform: scaleY(1);
 		z-index: 1000;
 	}		
 }
