@@ -225,6 +225,18 @@ a {
       .check-lang__dropdown li.active {
         color: #C0C0C0; }
 
+.about__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.about__title {
+  font-family: "Montserrat-Bold";
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 30px; }
+
 .interaction {
   background-image: url("../img/Image3.jpg");
   background-repeat: no-repeat;
@@ -3873,18 +3885,29 @@ html {
 @media (max-width: 1199.98px) {
   .header .tablet-container {
     max-width: 100%; }
-  .header__top {
-    margin: 0 20px; }
   .header-menu__item {
     font-size: 10px; }
   .header__logo {
     width: 120px; }
   .header__phone {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .header .main-button {
+    width: 100px;
+    font-size: 10px; }
+  .header__contacts {
+    font-size: 10px; }
+  .header__title {
+    font-size: 32px; }
+  .about__wrapper {
+    text-align: center; }
+  .about__tablet {
+    display: block; } }
 
 @media (max-width: 991.98px) {
   .main-button--width {
-    width: 100%; } }
+    width: 100%; }
+  .about__wrapper {
+    display: block; } }
 
 @media (max-width: 767.98px) {
   .header {

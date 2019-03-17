@@ -176,6 +176,25 @@ a {
 	}
 }
 
+.about {
+	&__wrapper {
+		display: flex;
+	}
+	&__title {
+		font-family: $montserrat;
+		font-weight: bold;
+		font-size: 40px;
+		// text-align: center;
+		margin-bottom: 30px;
+	}
+	&__img {
+		&--tablet {
+
+		}
+	}
+
+}
+
 .interaction {
 	@include bgimage(Image3);
 	height: 670px;
