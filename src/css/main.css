@@ -75,6 +75,8 @@
 
 html, body {
   height: 100%; }
+  html *, body * {
+    outline: 1px solid red; }
 
 body {
   font-size: 16px;
@@ -119,6 +121,13 @@ a {
   background-position: center center;
   height: 900px; }
   .header__top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     font-family: "OpenSans";
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -173,13 +182,30 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   cursor: pointer; }
-  .check-lang::after {
-    content: url("../img/strelka.svg");
-    width: 11px; }
   .check-lang__wrapper {
+    position: relative;
     width: 65px; }
+  .check-lang__arrow {
+    width: 16px;
+    margin-left: 5px; }
+    .check-lang__arrow.active {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .check-lang__arrow img {
+      width: 100%;
+      height: 100%;
+      display: block; }
   .check-lang__dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -189,8 +215,15 @@ a {
     -webkit-border-radius: 3px;
             border-radius: 3px;
     background-color: #fff; }
+    .check-lang__dropdown.show {
+      display: block; }
     .check-lang__dropdown li {
+      padding: 3px;
       cursor: pointer; }
+      .check-lang__dropdown li span:hover {
+        border-bottom: 1px solid #000; }
+      .check-lang__dropdown li.active {
+        color: #C0C0C0; }
 
 .interaction {
   background-image: url("../img/Image3.jpg");
@@ -3837,6 +3870,18 @@ html {
   height: 100vh !important; }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 1199.98px) {
+  .header .tablet-container {
+    max-width: 100%; }
+  .header__top {
+    margin: 0 20px; }
+  .header-menu__item {
+    font-size: 10px; }
+  .header__logo {
+    width: 120px; }
+  .header__phone {
+    font-size: 14px; } }
+
 @media (max-width: 991.98px) {
   .main-button--width {
     width: 100%; } }
