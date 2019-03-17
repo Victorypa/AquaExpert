@@ -75,8 +75,6 @@
 
 html, body {
   height: 100%; }
-  html *, body * {
-    outline: 1px solid red; }
 
 body {
   font-size: 16px;
@@ -119,7 +117,7 @@ a {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center center;
-  height: 900px; }
+  height: 800px; }
   .header__top {
     display: -webkit-box;
     display: -webkit-flex;
@@ -234,8 +232,11 @@ a {
 .about__title {
   font-family: "Montserrat-Bold";
   font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 30px; }
+  font-size: 40px; }
+
+.about__img--tablet {
+  width: 80%;
+  margin: 30px auto; }
 
 .interaction {
   background-image: url("../img/Image3.jpg");
@@ -3883,31 +3884,46 @@ html {
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
-  .header .tablet-container {
-    max-width: 100%; }
-  .header-menu__item {
-    font-size: 10px; }
-  .header__logo {
-    width: 120px; }
-  .header__phone {
-    font-size: 14px; }
-  .header .main-button {
-    width: 100px;
-    font-size: 10px; }
-  .header__contacts {
-    font-size: 10px; }
-  .header__title {
-    font-size: 32px; }
+  .header {
+    height: 600px; }
+    .header-menu__item {
+      font-size: 10px; }
+    .header__logo {
+      width: 120px; }
+    .header__phone {
+      font-size: 14px; }
+    .header .main-button {
+      width: 100px;
+      font-size: 10px;
+      margin: 0 5px; }
+    .header__contacts {
+      font-size: 10px; }
+    .header__title {
+      font-size: 32px; }
   .about__wrapper {
     text-align: center; }
   .about__tablet {
-    display: block; } }
+    display: block; }
+  .main-content {
+    text-align: center; }
+  .tablet-container {
+    max-width: 100%; } }
 
 @media (max-width: 991.98px) {
+  .header {
+    height: 400px; }
   .main-button--width {
     width: 100%; }
-  .about__wrapper {
-    display: block; } }
+  .main-title {
+    text-align: center; }
+    .main-title::after {
+      margin: 0 auto; }
+  .about__wrapper .main-title {
+    display: none; }
+  .about__img--tablet {
+    width: 60%; }
+  .interaction {
+    height: 450px; } }
 
 @media (max-width: 767.98px) {
   .header {

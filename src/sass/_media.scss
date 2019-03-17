@@ -12,9 +12,7 @@
 //Large: ≥992px
 @include media-breakpoint-down(lg) {
   .header {
-    .tablet-container {
-      max-width: 100%;
-    }
+    height: 600px;
 
     &-menu {
       &__item {
@@ -30,6 +28,7 @@
     .main-button {
       width: 100px;
       font-size: 10px;  
+      margin: 0 5px;
     }
     &__contacts {
       font-size: 10px;
@@ -39,40 +38,64 @@
     }
   }
 
-.about {
-  &__wrapper {
+  .about {
+    &__wrapper {
+      text-align: center;
+    }
+    &__tablet {
+      display: block;
+    }
+  }
+
+  .main-content {
     text-align: center;
   }
-  &__tablet {
-    display: block;
+
+  .tablet-container {
+    max-width: 100%;
   }
-
-
-
 }
+
+
 
 //Medium: ≥768px
 @include media-breakpoint-down(md) {
+  .header {
+    height: 400px;
+  }
+
   .main {
     &-button--width {
       width: 100%;
     }
+    &-title {
+      text-align: center;
+      &::after {
+        margin: 0 auto;
+      }
+    }
   }
   .about {
     &__wrapper {
-      display: block;
+      .main-title {
+        display: none;
+      }
     }
+    &__img {
+      &--tablet {
+        width: 60%;
+      }
 
-    // &__tablet {
-    //   display: none;
-    // }
+    }
   }
-  .about {
-    .main-title {
-  display: none;
+
+
+  .interaction {
+    height: 450px;
+  }
+
 }
-}
-}
+
 
 //Small: ≥576px
 @include media-breakpoint-down(sm) {
@@ -96,6 +119,7 @@
   .burger {
     display: block;
   }
+  
   .mobile {
     display: block;
   }
@@ -124,8 +148,6 @@
 
   }
 
-
-
   .interaction {
     height: 390px;
     &__wrapper {
@@ -140,15 +162,18 @@
     input {
       margin-bottom: 15px;
     }
+
     &__form {
       input {
         width: 100% ;
       }
     }
+
     &__info {
       text-align: center;
     }
   }
+
   .footer {
     display: none;
   }
