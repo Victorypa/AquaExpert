@@ -18,4 +18,8 @@ $(document).ready(function(){
       langshowMenu.toggleClass('show');
       langArrow.toggleClass('active');
   });
+
+  // $('#myModal').on('shown.bs.modal', function () {
+  //   $('#myInput').trigger('focus')
+  // })
 });

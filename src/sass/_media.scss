@@ -39,19 +39,10 @@
     }
   }
 
-  .about {
+.tablet-container {
+  max-width: 100%;  
+} 
 
-  }
-
-  .main {
-
-
-
-  .tablet-container {
-    max-width: 100%;
-    
-  }
-}
 }
 
 
@@ -68,6 +59,7 @@
       width: 100%;
     }
     &-title {
+      font-size: 28px;
       text-align: center;
       &::after {
         margin: 0 auto;
@@ -81,6 +73,13 @@
 
   .interaction {
     height: 450px;
+  }
+
+  .about {
+    &__img {
+      margin-bottom: 30px;
+
+    }
   }
   
 
@@ -122,6 +121,16 @@
     }
   }
 
+  .modal {
+    &-title {
+      font-size: 22px;
+    }
+    &-text {
+      display: none;
+        }
+  }
+
+
   .check-lang {
     font-size: 10px;
     &__dropdown {
@@ -150,18 +159,27 @@
 
   .about {
     &__img {
+      height: 350px;
       width: 80%;
       margin: 0 auto;
       margin-bottom: 30px;
+      img {
+        height: 100%;
+      }
     }
   }
 
   .interaction {
     height: 390px;
     &__wrapper {
+      display: none;
       margin-top: 0;
+      &--mobile {
+        display: block;
+      }
     }
   }
+
 
   .request {
     input {

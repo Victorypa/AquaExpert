@@ -34,18 +34,18 @@
   src: url("../fonts/Montserrat/Bold/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Bold/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Bold/Montserrat-Bold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Playfair Display";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.eot");
-  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.woff") format("woff"), url("../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Decor PERSONAL USE";
+  font-family: "Amiri-Regular";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/KrinkesDecorPersonalUse/KrinkesDecorPERSONALUSE.eot");
-  src: url("../fonts/KrinkesDecorPersonalUse/KrinkesDecorPERSONALUSE.eot?#iefix") format("embedded-opentype"), url("../fonts/KrinkesDecorPersonalUse/KrinkesDecorPERSONALUSE.woff") format("woff"), url("../fonts/KrinkesDecorPersonalUse/KrinkesDecorPERSONALUSE.ttf") format("truetype"); }
+  src: url("../fonts/Amiri/Regular/Amiri-Regular.eot");
+  src: url("../fonts/Amiri/Regular/Amiri-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Amiri/Regular/Amiri-Regular.woff") format("woff"), url("../fonts/Amiri/Regular/Amiri-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Amiri-Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Amiri/Bold/Amiri-Bold.eot");
+  src: url("../fonts/Amiri/Bold/Amiri-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Amiri/Bold/Amiri-Bold.woff") format("woff"), url("../fonts/Amiri/Bold/Amiri-Bold.ttf") format("truetype"); }
 
 ::-webkit-input-placeholder {
   color: #ccc;
@@ -313,6 +313,39 @@ a {
   text-align: justify;
   opacity: 0.7; }
 
+.modal-title {
+  font-family: "Montserrat-Bold";
+  font-weight: bold; }
+
+.modal-body {
+  margin: 0 auto; }
+  .modal-body input {
+    font-family: "OpenSans";
+    margin: 15px 0;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #EAE8E8; }
+    .modal-body input::-webkit-input-placeholder {
+      color: #676767; }
+    .modal-body input::-ms-input-placeholder {
+      color: #676767; }
+    .modal-body input::placeholder {
+      color: #676767; }
+
+.modal-footer {
+  margin: 0 auto; }
+
+.modal-width {
+  max-width: 1000px; }
+
+.modal-text {
+  font-family: "OpenSans";
+  font-size: 12px;
+  color: #676767; }
+  .modal-text a {
+    color: #1DA1EC;
+    text-decoration: underline; }
+
 .mobile-menu {
   width: 100%;
   -webkit-transform-origin: top;
@@ -404,7 +437,7 @@ a {
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 15px;
+  left: 5px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   z-index: 999; }
@@ -445,6 +478,10 @@ a {
 .container-fluid.px-0 .row {
   margin-left: 0;
   margin-right: 0; }
+
+.btn-primary.focus, .btn-primary:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
 
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
@@ -3910,7 +3947,7 @@ html {
       font-size: 10px; }
     .header__title {
       font-size: 32px; }
-  .main .tablet-container {
+  .tablet-container {
     max-width: 100%; } }
 
 @media (max-width: 991.98px) {
@@ -3919,13 +3956,16 @@ html {
   .main-button--width {
     width: 100%; }
   .main-title {
+    font-size: 28px;
     text-align: center; }
     .main-title::after {
       margin: 0 auto; }
   .main-content {
     text-align: center; }
   .interaction {
-    height: 450px; } }
+    height: 450px; }
+  .about__img {
+    margin-bottom: 30px; } }
 
 @media (max-width: 767.98px) {
   .header {
@@ -3948,6 +3988,10 @@ html {
     display: block; }
   .mobile-menu .user-nav__logo {
     width: 124px; }
+  .modal-title {
+    font-size: 22px; }
+  .modal-text {
+    display: none; }
   .check-lang {
     font-size: 10px; }
     .check-lang__dropdown {
@@ -3965,13 +4009,19 @@ html {
     text-align: center;
     padding: 0 15px; }
   .about__img {
+    height: 350px;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 30px; }
+    .about__img img {
+      height: 100%; }
   .interaction {
     height: 390px; }
     .interaction__wrapper {
+      display: none;
       margin-top: 0; }
+      .interaction__wrapper--mobile {
+        display: block; }
   .request input {
     margin-bottom: 15px; }
   .request__form input {

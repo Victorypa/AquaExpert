@@ -20,6 +20,49 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body col col-md-8">
+                    <h2 class="modal-title" id="exampleModalLabel">Заказать звонок</h2>
+                    <input type="name" class="col-12" placeholder="Имя*" title="Введите имя" required>
+                    <input type="tel" class="col-12" placeholder="Телефон*" title="Введите номер телефона" required>
+                    <button type="button" class="col-12 btn btn-primary main-button my-2">Перезвоните мне</button>
+
+                </div>
+                <div class="modal-footer d-flex flex-column col col-md-8">
+                    <div class="modal-text">Указывая свои данные вы даете полное согласие на обработку персональных
+                        данных в соответствии с <a href="#"  data-toggle="modal" data-target="#exampleModalCenter">политикой конфиденциальности</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  <!-- Modal 2 -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-width" role="document">
+      <div class="modal-content px-4">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Политика конфиденциальности</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую сайт «АКВАЭКСПОРТ», (далее – ) расположенный на доменном имени (а также его субдоменах), может получить о Пользователе во время использования сайта (а также его субдоменов), его программ и его продуктов. 1. Определение терминов 1.1 В настоящей Политике конфиденциальности используются следующие термины: 1.1.1. «Администрация сайта» (далее – Администрация) – уполномоченные сотрудники на управление сайтом «АКВАЭКСПОРТ», которые организуют и (или) осуществляют обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными. 1.1.2. «Персональные данные» - любая информация, относящаяся к прямо или косвенно определенному, или определяемому физическому лицу (субъекту персональных данных). 1.1.3. «Обработка персональных данных» - любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных. 1.1.4. «Конфиденциальность персональных данных» - обязательное для соблюдения Оператором или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания. 1.1.5. «Сайт ООО «БУПРОМЭКСПЕРТ»» - это совокупность связанных между собой веб-страниц, размещенных в сети Интернет по
+        </div>
+      </div>
+    </div>
+  </div>
+
     <header class="header py-lg-3">
         <div class="container tablet-container">
             <div class="mobile">
@@ -68,12 +111,13 @@
                         <a class="user-nav__link" href="#">Обратная связь</a>
                     </li>
                     <li class="user-nav__item">
-                        <a class="user-nav__link user-nav__link--callorder" href="#">Заказать звонок</a>
+                        <a class="user-nav__link user-nav__link--callorder" href="#" data-toggle="modal"
+                            data-target="#exampleModal">Заказать звонок</a>
                     </li>
 
                 </ul>
             </div>
-            <div class="header__top">
+            <div class="header__top py-2">
                 <a href="#" class="header__logo">
                     <img src="img/logo.svg" alt="logo">
                 </a>
@@ -83,7 +127,8 @@
                     <li class="header-menu__item"> <a href="#">Обратная связь</a> </li>
                 </ul>
 
-                <button type="button" class="btn btn-primary main-button">Заказать звонок</button>
+                <button type="button" class="btn btn-primary main-button" data-toggle="modal"
+                    data-target="#exampleModal">Заказать звонок</button>
                 <div class="header__contacts">
 
                     <a href="tel:+7 (985) 392 50 72" class="header__phone">+7 (985) 392 50 72</a>
@@ -122,11 +167,10 @@
 
             <div class="row about__wrapper">
                 <div class="col-12 offset-lg-2">
-<h2 class="main-title">
-        О компании
-</h2>
+                    <h2 class="main-title">
+                        О компании
+                    </h2>
                 </div>
-                    <!-- <h2 class="col-12 offset-lg-2 main-title">О компании</h2> -->
                 <div class="col-12 order-md-2 order-lg-1 col-lg-4 offset-lg-2">
                     <p class="main-content">Наша компания оказывает содействие производителям бутилированной питьевой
                         воды из России в выходе на новые рынки сбыта.</p>
@@ -136,7 +180,7 @@
                         деятельности человека и роста народонаселения ряд регионов мира будут испытывать все большую
                         потребность в чистой питьевой воде.</p>
                 </div>
-                <div class="col-12 order-md-1 order-lg-1 col-lg-6 pr-lg-0">
+                <div class="col-12 order-md-1 order-lg-1 col-lg-6 pr-lg-0 px-0 pl-lg-4">
                     <div class="about__img ">
                         <img class="img-responsive" src="img/Image2.jpg" alt="image2">
                     </div>
@@ -145,6 +189,7 @@
 
         </div>
     </section>
+
     <section class="interaction__mobile">
         <div class="interaction__wrapper--mobile">
             <h2 class="main-title">Сотрудничество</h2>
@@ -214,30 +259,14 @@
                     <li class="header-menu__item"> <a href="#">Обратная связь</a> </li>
                 </ul>
 
-                <button type="button" class="btn btn-primary main-button">Заказать звонок</button>
+                <button type="button" class="btn btn-primary main-button" data-toggle="modal"
+                    data-target="#exampleModal">Заказать звонок</button>
                 <div class="header__contacts">
 
                     <a href="tel:+7 (985) 392 50 72" class="header__phone">+7 (985) 392 50 72</a>
 
                     <a href="mailto:aquaexport2018@gmail.com" class="header__mail">aquaexport2018@gmail.com</a>
                 </div>
-                <!-- <div class="check-lang__wrapper">
-                    <div class="check-lang">
-                        <div>
-                            RU
-                        </div>
-                        <div class="check-lang__arrow">
-                            <img src="img/strelka.svg" alt="logo">
-                        </div>
-                    </div>
-                    <ul class="check-lang__dropdown">
-                        <li><span>RU</span></li>
-                        <li><span>EN</span></li>
-                        <li><span>AR</span></li>
-
-                    </ul>
-                </div> -->
-
             </div>
         </div>
     </footer>
