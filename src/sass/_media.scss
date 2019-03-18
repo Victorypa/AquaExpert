@@ -17,6 +17,7 @@
     &-menu {
       &__item {
         font-size: 10px;
+        margin-left: 10px;
       }
     }
     &__logo {
@@ -39,23 +40,20 @@
   }
 
   .about {
-    &__wrapper {
-      text-align: center;
-    }
-    &__tablet {
-      display: block;
-    }
+
   }
 
-  .main-content {
-    text-align: center;
-  }
+  .main {
+
+
 
   .tablet-container {
     max-width: 100%;
     
   }
 }
+}
+
 
 
 
@@ -76,20 +74,10 @@
       }
     }
   }
-  .about {
-    &__wrapper {
-      .main-title {
-        display: none;
-      }
-    }
-    &__img {
-      &--tablet {
-        width: 60%;
-      }
 
-    }
+  .main-content {
+    text-align: center;
   }
-
 
   .interaction {
     height: 450px;
@@ -158,16 +146,20 @@
       text-align: center;
       padding: 0 15px;
     }
+  }
 
+  .about {
+    &__img {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
   }
 
   .interaction {
     height: 390px;
     &__wrapper {
-      display: none;
-      &--mobile {
-        display: block;
-      }
+      margin-top: 0;
     }
   }
 
@@ -190,12 +182,15 @@
   .footer {
     display: none;
   }
-
-
 }
 
 //Extra small: >0
 @include media-breakpoint-down(xs) {
+  .about {
+    &__img {
+      width: 100%; 
+    }
+  }
 
 }
 

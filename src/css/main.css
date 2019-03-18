@@ -3896,7 +3896,8 @@ html {
   .header {
     height: 600px; }
     .header-menu__item {
-      font-size: 10px; }
+      font-size: 10px;
+      margin-left: 10px; }
     .header__logo {
       width: 120px; }
     .header__phone {
@@ -3909,13 +3910,7 @@ html {
       font-size: 10px; }
     .header__title {
       font-size: 32px; }
-  .about__wrapper {
-    text-align: center; }
-  .about__tablet {
-    display: block; }
-  .main-content {
-    text-align: center; }
-  .tablet-container {
+  .main .tablet-container {
     max-width: 100%; } }
 
 @media (max-width: 991.98px) {
@@ -3927,10 +3922,8 @@ html {
     text-align: center; }
     .main-title::after {
       margin: 0 auto; }
-  .about__wrapper .main-title {
-    display: none; }
-  .about__img--tablet {
-    width: 60%; }
+  .main-content {
+    text-align: center; }
   .interaction {
     height: 450px; } }
 
@@ -3971,12 +3964,14 @@ html {
   .main-content {
     text-align: center;
     padding: 0 15px; }
+  .about__img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px; }
   .interaction {
     height: 390px; }
     .interaction__wrapper {
-      display: none; }
-      .interaction__wrapper--mobile {
-        display: block; }
+      margin-top: 0; }
   .request input {
     margin-bottom: 15px; }
   .request__form input {
@@ -3985,5 +3980,9 @@ html {
     text-align: center; }
   .footer {
     display: none; } }
+
+@media (max-width: 575.98px) {
+  .about__img {
+    width: 100%; } }
 
 /*==========  Mobile First  ==========*/
