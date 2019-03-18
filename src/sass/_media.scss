@@ -1,12 +1,12 @@
-@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
-@import "../../node_modules/bootstrap/scss/utilities/_sizing.scss";
+// @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+// @import "../../node_modules/bootstrap/scss/utilities/_sizing.scss";
 
 /*==========  Desktop First  ==========*/
 
 //Extra large: ≥1200px
 @include media-breakpoint-down(xl) {
 
-  }
+}
   
 
 //Large: ≥992px
@@ -16,7 +16,7 @@
 
     &-menu {
       &__item {
-        font-size: 10px;
+        font-size: 12px;
         margin-left: 10px;
       }
     }
@@ -43,15 +43,39 @@
   max-width: 100%;  
 } 
 
+.footer {
+  &-menu {
+    &__item {
+      font-size: 10px;
+      margin-left: 10px;
+    }
+  }
+  &__logo {
+    width: 120px;
+  }
+  &__phone {
+    font-size: 14px;
+  }
+  .main-button {
+    width: 100px;
+    font-size: 10px;  
+    margin: 0 5px;
+  }
+  &__contacts {
+    font-size: 10px;
+  }
+  &__title {
+    font-size: 32px;
+  }
 }
-
-
-
+}
 
 //Medium: ≥768px
 @include media-breakpoint-down(md) {
   .header {
     height: 400px;
+    background-size: cover;
+
   }
 
   .main {
@@ -77,11 +101,11 @@
 
   .about {
     &__img {
+      width: 80%;
+      margin: 0 auto;
       margin-bottom: 30px;
-
     }
   }
-  
 
 }
 
@@ -157,17 +181,7 @@
     }
   }
 
-  .about {
-    &__img {
-      height: 350px;
-      width: 80%;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      img {
-        height: 100%;
-      }
-    }
-  }
+
 
   .interaction {
     height: 390px;

@@ -33,7 +33,7 @@ gulp.task('sass', () => {
 gulp.task('css-libs', ['sass'], () => {
 	return gulp.src([
 		'node_modules/normalize.css/normalize.css',
-		'node_modules/font-awesome/css/font-awesome.min.css',
+		// 'node_modules/font-awesome/css/font-awesome.min.css',
 		'node_modules/bootstrap/dist/css/bootstrap.min.css'
 	])
 	.pipe(concat('libs.min.css'))

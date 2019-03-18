@@ -5,11 +5,6 @@
 	color: #ccc;
 	@include transition-animation;
 }
-	
-::selection {
-	background-color: $accent;
-	color: #fff;
-}
 
 html, body {
 	height: 100%;
@@ -66,6 +61,8 @@ a {
 .header {
 	@include bgimage(Image1);
 	height: 800px;
+	max-width: 1920px;
+	margin: 0 auto;
 	&__top {
 		display: flex;
 		flex-wrap: nowrap;
@@ -168,7 +165,6 @@ a {
 					color: #C0C0C0;
 				}
 			}
-
 	}
 }
 
@@ -183,9 +179,15 @@ a {
 
 	}
 	&__img {
+		margin-left: auto;
+		max-height: 420px;
+    height: 100%;
 		&--tablet {
 			width: 80%;
 			margin: 30px auto;
+		}
+		img {
+			@include img100;
 		}
 	}
 
@@ -219,6 +221,9 @@ a {
 		width: 100%;
 		border-radius: 3px;
 		margin-bottom: 30px;
+		&:hover {
+			border: 1px solid #000;
+		}
 	}
 	&__info {
 		font-size: 13px;
@@ -265,9 +270,13 @@ a {
 }
 
 .modal {
+	&-header {
+		border-bottom: 0;
+	}
 	&-title {
 		font-family: $montserrat;
 		font-weight: bold;
+		text-align: center;
 	}
 	&-body {
 		margin: 0 auto;
@@ -279,8 +288,6 @@ a {
 			&::placeholder  {
 				color: #676767;
 			}
-
-
 		}
 	}
 	&-footer {
@@ -293,25 +300,26 @@ a {
 		font-family: $opensans;
 		font-size: 12px;
 		color: #676767;
+
+		margin-bottom: 60px;
 		a {	
 			color: #1DA1EC;
 			text-decoration: underline;
 		}
 	}
+	.close span {
+		font-size: 40px;
+    font-weight: normal;
+	}
 }
-
-
 
 .mobile-menu {
 	width: 100%;
 	transform-origin: top;
 	transform: scaleY(0);
 	position: absolute;
-	// top: 5%;
 	left: 0;
 	right: 0;
-	// top: -100%;
-
 	background-color: #fff;
 	
 	z-index: 998;
@@ -379,7 +387,6 @@ a {
 		z-index: 1001;
 	}
 	&__lang {
-
 		font-size: 10px;
 	}
 
@@ -437,6 +444,60 @@ a {
 	}
 }
 
+.footer {
+	max-width: 1920px;
+	margin: 0 auto;
+	&__nav {
+		display: flex;
+		flex-wrap: nowrap;
+		font-family: $opensans;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		width: 135px;
+		height: 40px;
+		img {
+			@include img100;
+		}
+	}
+	&-menu {
+		display: flex;
+	
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		&__item {
+		margin-left: 30px;
+		a {
+			color: #262626;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		}
+	}
+	&__contacts {
+		text-align: right;
+		a {
+			display: block;
+			color: #262626;
+		}
+	}
+	&__phone {
+		font-family: $montserrat;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	&__title {
+		font-family: $montserrat;
+		line-height: normal;
+		padding-top: 125px;
+		font-weight: bold;
+		font-size: 52px;
+	}
+}
+
 .container-fluid {
 	&.px-0 {
 		.row {
@@ -450,4 +511,4 @@ a {
 	box-shadow: none !important; //bs4 box-shadow off
 }
 
-@import "media"; // Always at the end
+@import "media"; 

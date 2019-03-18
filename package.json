@@ -28,5 +28,8 @@
     "imagemin-pngquant": "^5.1.0",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0"
+  },
+  "dependencies": {
+    "page-scroll-to-id": "^1.5.9"
   }
 }
