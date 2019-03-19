@@ -224,6 +224,9 @@ a {
 		&:hover {
 			border: 1px solid #000;
 		}
+		&:focus::placeholder {
+			color: transparent;
+		}
 	}
 	&__info {
 		font-size: 13px;

@@ -68,6 +68,8 @@
     font-size: 32px;
   }
 }
+
+
 }
 
 //Medium: ≥768px
@@ -100,6 +102,7 @@
   }
 
   .about {
+ padding: 30px 0;
     &__img {
       width: 80%;
       margin: 0 auto;
@@ -112,6 +115,7 @@
 
 //Small: ≥576px
 @include media-breakpoint-down(sm) {
+
 
   .header {
     background-position-x: 85%;
@@ -181,31 +185,31 @@
     }
   }
 
-
-
-  .interaction {
-    height: 390px;
-    &__wrapper {
-      display: none;
-      margin-top: 0;
-      &--mobile {
-        display: block;
-      }
-    }
+  .about, .request {
+    padding: 15px 0;
   }
 
+  .interaction {
+    position: relative;
+    margin-top: 250px;
+    height: 390px;
+    &__wrapper {
+      position: absolute;
+      top: -310px;
+      left: 0;
+      margin-top: 0;
+    }
+  }
 
   .request {
     input {
       margin-bottom: 15px;
     }
-
     &__form {
       input {
         width: 100% ;
       }
     }
-
     &__info {
       text-align: center;
     }
