@@ -456,21 +456,20 @@ a {
   .burger span, .burger span::before, .burger span::after {
     content: '';
     display: block;
-    height: 2px;
-    width: 18px;
+    height: 3px;
+    width: 24px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -9px;
-    margin-top: -1px;
+    margin-left: -12px;
     background-color: #1DA1EC; }
   .burger span::before {
-    margin-top: -6px;
+    margin-top: -9px;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s; }
   .burger span::after {
-    margin-top: 4px;
+    margin-top: 5px;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s; }
