@@ -233,7 +233,6 @@
                 </div>
             </div>
             <div class="mobile-menu">
-
                 <ul class="user-nav">
                     <li class="user-nav__item">
                         <a class="user-nav__link" href="#about">О компании</a>
@@ -255,7 +254,7 @@
                 <a href="#" class="header__logo">
                     <img src="img/logo.svg" alt="logo">
                 </a>
-                <ul class="header-menu">
+                <ul class="col-5 header-menu">
                     <li class="header-menu__item"> <a href="#about">О компании</a></li>
                     <li class="header-menu__item"> <a href="#interaction">Сотрудничество</a></li>
                     <li class="header-menu__item"> <a href="#request">Обратная связь</a> </li>
@@ -263,27 +262,30 @@
 
                 <button type="button" class="btn btn-primary main-button" data-toggle="modal"
                     data-target="#exampleModal">Заказать звонок</button>
-                <div class="header__contacts">
+                <div class="header__contacts col-3 d-flex align-items-center">
+                    <div>
+                        <a href="tel:+7 (985) 392 50 72" class="header__phone">+7 (985) 392 50 72</a>
 
-                    <a href="tel:+7 (985) 392 50 72" class="header__phone">+7 (985) 392 50 72</a>
+                        <a href="mailto:aquaexport2018@gmail.com" class="header__mail">aquaexport2018@gmail.com</a>
 
-                    <a href="mailto:aquaexport2018@gmail.com" class="header__mail">aquaexport2018@gmail.com</a>
-                </div>
-                <div class="check-lang__wrapper">
-                    <div class="check-lang pl-3">
-                        <div>
-                            RU
-                        </div>
-                        <div class="check-lang__arrow">
-                            <img src="img/strelka.svg" alt="logo">
-                        </div>
                     </div>
-                    <ul class="check-lang__dropdown">
-                        <li><span>RU</span></li>
-                        <li><span>EN</span></li>
-                        <li><span>AR</span></li>
-                    </ul>
+                    <div class="check-lang__wrapper">
+                        <div class="check-lang pl-3">
+                            <div>
+                                RU
+                            </div>
+                            <div class="check-lang__arrow">
+                                <img src="img/strelka.svg" alt="logo">
+                            </div>
+                        </div>
+                        <ul class="check-lang__dropdown">
+                            <li><span>RU</span></li>
+                            <li><span>EN</span></li>
+                            <li><span>AR</span></li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
 
             <div class="row">
@@ -294,7 +296,7 @@
         </div>
     </header>
 
-    <section class="about py-5" id="about">
+    <section class="about" id="about">
         <div class="container-fluid px-0">
 
             <div class="row about__wrapper">
@@ -332,7 +334,6 @@
                 бутилированную воду.</p>
         </div>
     </section>
-
 
     <section class="interaction py-5" id="interaction">
         <div class="container">
@@ -388,19 +389,36 @@
                 <a href="#" class="footer__logo">
                     <img src="img/logo.svg" alt="logo">
                 </a>
-                <ul class="footer-menu">
+                <ul class="col-5 footer-menu">
                     <li class="footer-menu__item"> <a href="#about">О компании</a></li>
                     <li class="footer-menu__item"> <a href="#interaction">Сотрудничество</a></li>
                     <li class="footer-menu__item"> <a href="#request">Обратная связь</a> </li>
                 </ul>
                 <button type="button" class="btn btn-primary main-button" data-toggle="modal"
                     data-target="#exampleModal">Заказать звонок</button>
-                <div class="footer__contacts">
+                <div class="footer__contacts col-auto d-flex align-items-center">
 
-                    <a href="tel:+7 (985) 392 50 72" class="footer__phone">+7 (985) 392 50 72</a>
+                    <div>
+                        <a href="tel:+7 (985) 392 50 72" class="header__phone">+7 (985) 392 50 72</a>
 
-                    <a href="mailto:aquaexport2018@gmail.com" class="footer__mail">aquaexport2018@gmail.com</a>
-                </div>
+                        <a href="mailto:aquaexport2018@gmail.com" class="header__mail">aquaexport2018@gmail.com</a>
+
+                    </div>
+                    <div class="check-lang__wrapper">
+                        <div class="check-lang pl-3">
+                            <div>
+                                RU
+                            </div>
+                            <div class="check-lang__arrow">
+                                <img src="img/strelka.svg" alt="logo">
+                            </div>
+                        </div>
+                        <ul class="check-lang__dropdown check-lang__dropdown--up">
+                            <li><span>RU</span></li>
+                            <li><span>EN</span></li>
+                            <li><span>AR</span></li>
+                        </ul>
+                    </div>
             </div>
         </div>
     </footer>

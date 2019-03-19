@@ -79,18 +79,18 @@ a {
 	}
 	&-menu {
 		display: flex;
-	
+		justify-content: space-between;
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		&__item {
-		margin-left: 30px;
-		a {
-			color: #262626;
-			&:hover {
-				text-decoration: underline;
+			&__item {
+			margin-left: 20px;
+			a {
+				color: #262626;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
-		}
 		}
 	}
 	&__contacts {
@@ -169,6 +169,7 @@ a {
 }
 
 .about {
+	padding: 85px 0;
 	&__wrapper {
 		display: flex;
 	}
@@ -190,7 +191,6 @@ a {
 			@include img100;
 		}
 	}
-
 }
 
 .interaction {
@@ -389,9 +389,8 @@ a {
 	&__lang {
 		font-size: 10px;
 	}
-
-
 }
+
 .burger {
 	width: 40px;
 	height: 40px;
@@ -407,25 +406,24 @@ a {
 		content: '';
 		display: block;
 
-		height: 2px;
-		width: 18px;
+		height: 3px;
+		width: 24px;
 
 		position: absolute;
 		left: 50%;
 		top: 50%;
 
-		margin-left: -9px;
-		margin-top: -1px;
+		margin-left: -12px;
 
 		background-color: #1DA1EC;
 	}
 	span::before {
-		margin-top: -6px;
+		margin-top: -9px;
 
 		transition: all 0.2s;
 	}
 	span::after {
-		margin-top: 4px;
+		margin-top: 5px;
 
 		transition: all 0.2s;
 	}
@@ -463,12 +461,12 @@ a {
 	}
 	&-menu {
 		display: flex;
-	
+		justify-content: space-between;
 		list-style: none;
 		padding: 0;
 		margin: 0;
 		&__item {
-		margin-left: 30px;
+		margin-left: 20px;
 		a {
 			color: #262626;
 			&:hover {
@@ -495,6 +493,9 @@ a {
 		padding-top: 125px;
 		font-weight: bold;
 		font-size: 52px;
+	}
+	.check-lang__dropdown--up {
+		bottom: 100%;
 	}
 }
 

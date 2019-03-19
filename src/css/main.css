@@ -138,11 +138,15 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 0; }
     .header-menu__item {
-      margin-left: 30px; }
+      margin-left: 20px; }
       .header-menu__item a {
         color: #262626; }
         .header-menu__item a:hover {
@@ -215,27 +219,27 @@ a {
       .check-lang__dropdown li.active {
         color: #C0C0C0; }
 
-.about__wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-.about__title {
-  font-family: "Montserrat-Bold";
-  font-weight: bold;
-  font-size: 40px; }
-
-.about__img {
-  margin-left: auto;
-  max-height: 420px;
-  height: 100%; }
-  .about__img--tablet {
-    width: 80%;
-    margin: 30px auto; }
-  .about__img img {
-    width: 100%;
+.about {
+  padding: 85px 0; }
+  .about__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .about__title {
+    font-family: "Montserrat-Bold";
+    font-weight: bold;
+    font-size: 40px; }
+  .about__img {
+    margin-left: auto;
+    max-height: 420px;
     height: 100%; }
+    .about__img--tablet {
+      width: 80%;
+      margin: 30px auto; }
+    .about__img img {
+      width: 100%;
+      height: 100%; }
 
 .interaction {
   background-image: url("../img/Image3.jpg");
@@ -514,11 +518,15 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 0; }
     .footer-menu__item {
-      margin-left: 30px; }
+      margin-left: 20px; }
       .footer-menu__item a {
         color: #262626; }
         .footer-menu__item a:hover {
@@ -538,6 +546,8 @@ a {
     padding-top: 125px;
     font-weight: bold;
     font-size: 52px; }
+  .footer .check-lang__dropdown--up {
+    bottom: 100%; }
 
 .container-fluid.px-0 .row {
   margin-left: 0;
@@ -3997,7 +4007,7 @@ html {
   .header {
     height: 600px; }
     .header-menu__item {
-      font-size: 12px;
+      font-size: 11px;
       margin-left: 10px; }
     .header__logo {
       width: 120px; }
@@ -4014,7 +4024,7 @@ html {
   .tablet-container {
     max-width: 100%; }
   .footer-menu__item {
-    font-size: 10px;
+    font-size: 11px;
     margin-left: 10px; }
   .footer__logo {
     width: 120px; }
