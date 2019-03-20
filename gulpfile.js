@@ -50,11 +50,11 @@ gulp.task('js', () => {
 	return gulp.src([
 		'node_modules/jquery/dist/jquery.min.js',
 		'node_modules/bootstrap/js/dist/util.js',
-		'node_modules/popper.js/dist/umd/popper.js',
 		'node_modules/bootstrap/js/dist/modal.js',
-		'src/js/common.js', // Always at the end
+		'node_modules/popper.js/dist/umd/popper.js',
+		'node_modules/bootstrap/js/dist/dropdown.js'
 		])
-	.pipe(concat('scripts.min.js'))
+	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('src/js'))
 	.pipe(browsersync.reload({ stream: true }))
@@ -92,7 +92,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'js'], () => {
 	const buildFonts = gulp.src('src/fonts/**/*') 
 		.pipe(gulp.dest('dist/fonts'));
 
-	const buildJs = gulp.src('src/js/scripts.min.js') 
+	const buildJs = gulp.src('src/js/*.js') 
 		.pipe(gulp.dest('dist/js'));
 
 	const buildHtml = gulp.src('src/*.html')

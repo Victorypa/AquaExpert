@@ -84,10 +84,6 @@ input, textarea {
   -webkit-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
-  input:focus:required:invalid, textarea:focus:required:invalid {
-    border-color: red; }
-  input:required:valid, textarea:required:valid {
-    border-color: green; }
 
 a {
   text-decoration: none;
@@ -103,12 +99,18 @@ a {
 .text-center {
   text-align: center; }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 .header {
   background-image: url("../img/Image1.jpg");
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: center center;
   height: 800px;
-  max-width: 1920px;
   margin: 0 auto; }
   .header__top {
     display: -webkit-box;
@@ -158,66 +160,13 @@ a {
       color: #262626; }
   .header__phone {
     font-family: "Montserrat-Bold";
-    font-weight: bold;
-    font-size: 20px; }
+    font-weight: bold; }
   .header__title {
     font-family: "Montserrat-Bold";
     line-height: normal;
     padding-top: 125px;
     font-weight: bold;
     font-size: 52px; }
-
-.check-lang {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer; }
-  .check-lang__wrapper {
-    position: relative;
-    width: 65px; }
-  .check-lang__arrow {
-    width: 10px;
-    margin-left: 5px; }
-    .check-lang__arrow.active {
-      -webkit-transform: rotate(180deg);
-          -ms-transform: rotate(180deg);
-              transform: rotate(180deg); }
-    .check-lang__arrow img {
-      width: 100%;
-      height: 100%;
-      display: block; }
-  .check-lang__dropdown {
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
-    background-color: #fff; }
-    .check-lang__dropdown.show {
-      display: block; }
-    .check-lang__dropdown li {
-      padding: 3px;
-      cursor: pointer; }
-      .check-lang__dropdown li span:hover {
-        border-bottom: 1px solid #000; }
-      .check-lang__dropdown li.active {
-        color: #C0C0C0; }
 
 .about {
   padding: 85px 0; }
@@ -244,14 +193,14 @@ a {
 .interaction {
   background-image: url("../img/Image3.jpg");
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: center center;
   height: 670px; }
   .interaction__wrapper {
     padding: 20px 30px;
     background-color: #fff;
     margin-top: 40px; }
-    .interaction__wrapper--mobile {
-      display: none; }
 
 .request {
   display: -webkit-box;
@@ -301,12 +250,17 @@ a {
   width: 163px;
   font-weight: 600;
   padding: 10px;
-  background-color: #1DA1EC;
+  background-color: #3b81a8;
   border: none; }
   .main-button--width {
     width: 261px; }
   .main-button:hover {
-    background-color: #56C2FF; }
+    background-color: #3b81a8; }
+    .main-button:hover:hover {
+      background: #306a8a;
+      -webkit-transition: 0.2s ease-in;
+      -o-transition: 0.2s ease-in;
+      transition: 0.2s ease-in; }
 
 .main-title {
   font-family: "Montserrat-Bold";
@@ -427,10 +381,6 @@ a {
   .mobile__phone {
     font-weight: bold;
     font-size: 14px; }
-  .mobile__mail {
-    font-weight: normal;
-    font-size: 10px;
-    line-height: normal; }
   .mobile__logo {
     width: 124px; }
   .mobile__burger {
@@ -551,8 +501,6 @@ a {
     padding-top: 125px;
     font-weight: bold;
     font-size: 52px; }
-  .footer .check-lang__dropdown--up {
-    bottom: 100%; }
 
 .container-fluid.px-0 .row {
   margin-left: 0;
@@ -4026,8 +3974,6 @@ html {
       font-size: 10px; }
     .header__title {
       font-size: 32px; }
-  .tablet-container {
-    max-width: 100%; }
   .footer-menu__item {
     font-size: 11px;
     margin-left: 10px; }
@@ -4112,11 +4058,11 @@ html {
     padding: 15px 0; }
   .interaction {
     position: relative;
-    margin-top: 250px;
+    margin-top: 225px;
     height: 390px; }
     .interaction__wrapper {
       position: absolute;
-      top: -310px;
+      top: -286px;
       left: 0;
       margin-top: 0; }
   .request input {

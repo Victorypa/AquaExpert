@@ -30,12 +30,6 @@ input, textarea {
 	padding: 10px;
 	outline: none;
 	@include transition-animation;
-	&:focus:required:invalid {
-		border-color: red;
-	}
-	&:required:valid {
-		border-color: green;
-	}
 }
 
 a {
@@ -56,12 +50,15 @@ a {
 	text-align: center;
 }
 
-
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
 
 .header {
 	@include bgimage(Image1);
 	height: 800px;
-	max-width: 1920px;
 	margin: 0 auto;
 	&__top {
 		display: flex;
@@ -103,7 +100,7 @@ a {
 	&__phone {
 		font-family: $montserrat;
 		font-weight: bold;
-		font-size: 20px;
+
 	}
 	&__title {
 		font-family: $montserrat;
@@ -111,60 +108,6 @@ a {
 		padding-top: 125px;
 		font-weight: bold;
 		font-size: 52px;
-	}
-}
-
-.check-lang {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-
-	&__wrapper {
-		position: relative;
-		width: 65px;
-	}
-	&__arrow {
-		width: 10px;
-		margin-left: 5px;
-
-		&.active {
-			transform: rotate(180deg);
-		}
-		img {
-			@include img100;
-			display: block;
-
-		}
-	}
-	&__dropdown {
-		display: none;
-		position: absolute;
-		left: 0;
-    right: 0;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
-		border-radius: 3px;
-
-		background-color: #fff;
-		&.show {
-			display: block;
-		}
-			li {
-				padding: 3px;
-				cursor: pointer;
-				span {
-					&:hover {
-						border-bottom: 1px solid #000;
-					}
-				}
-				&.active {
-					color: #C0C0C0;
-				}
-			}
 	}
 }
 
@@ -200,9 +143,6 @@ a {
 		padding: 20px 30px;
 		background-color: #fff;
 		margin-top: 40px;
-		&--mobile {
-			display: none;
-		}
 	}
 }
 
@@ -243,14 +183,14 @@ a {
 	width: 163px;
 	font-weight: 600;
 	padding: 10px;
-	background-color: #1DA1EC;
+	background-color: #3b81a8;
 	border: none;
 	
 	&--width {
 		width: 261px;
 	}
 	&:hover {
-		background-color: #56C2FF;
+		@include button-bg(#3b81a8);
 	}
 
 }
@@ -366,12 +306,6 @@ a {
 	&__phone {
 		font-weight: bold;
 		font-size: 14px;
-	}
-
-	&__mail {
-		font-weight: normal;
-		font-size: 10px;
-		line-height: normal;
 	}
 
 	&__logo {
@@ -497,9 +431,7 @@ a {
 		font-weight: bold;
 		font-size: 52px;
 	}
-	.check-lang__dropdown--up {
-		bottom: 100%;
-	}
+
 }
 
 .container-fluid {
