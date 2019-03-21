@@ -13,7 +13,6 @@ html, body {
 		// }
 }
 
-
 body {
 	font-size: $def-fnz;
 	min-width: 320px;
@@ -177,6 +176,98 @@ ul {
 			text-decoration: underline;
 		}
 	}
+}
+
+.circle {
+	display: none;
+  position:absolute;
+	top: 15%;
+	right: 95%;
+  transform:translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: gray;
+  border-radius: 50%;
+  overflow: hidden; 
+}
+
+.wave {
+  position:relative;
+  width: 100%;
+  height:100%;
+  background: #29B6F6;
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(0,0,0,.5)
+}
+
+.wave:before,
+.wave:after  {
+  content: '';
+  position:absolute;
+  width:200%;
+  height:200%;
+  left:-50%;  
+}
+
+.wave:before {
+  border-radius:35%;
+  background: #3b81a8;
+  animation: flow 3s linear infinite;
+  animation-delay:2s;
+  bottom:50%;
+}
+
+.wave:after{
+  
+  border-radius: 40%;
+  background: white;
+  animation: flow 3s linear infinite;
+  bottom:70%;
+}
+
+.bubble {
+  position:absolute;
+  width: 50px;
+  height:50px;
+  background:white;
+  border-radius: 50%;
+  animation: rise 5s infinite linear;
+}
+
+/*ANIMATIONS*/
+@keyframes flow {
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes rise {
+  0% {
+    transform:translate(0,0) 
+  }
+  
+  20% {
+    transform:translate(10px,-20px) 
+  }
+  
+  40% {
+    transform:translate(-10px,-40px) 
+  }
+  
+  
+  60% {
+    transform:translate(-10px,-60px) 
+  }
+  80% {
+    transform:translate(10px,-80px) 
+  }
+  100% {
+    transform:translate(-10px,-100px);
+    opacity: 0
+  }
 }
 
 .main-button {
