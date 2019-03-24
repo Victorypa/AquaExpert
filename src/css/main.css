@@ -110,7 +110,7 @@ ul {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center center;
-  height: 800px;
+  min-height: 600px;
   margin: 0 auto; }
   .header__top {
     display: -webkit-box;
@@ -120,7 +120,6 @@ ul {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    font-family: "OpenSans";
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -128,7 +127,8 @@ ul {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    font-family: "OpenSans"; }
   .header__logo {
     width: 135px;
     height: 40px; }
@@ -144,9 +144,9 @@ ul {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    list-style: none; }
     .header-menu__item {
       margin-left: 20px; }
       .header-menu__item a {
@@ -164,9 +164,8 @@ ul {
   .header__title {
     font-family: "Montserrat-Bold";
     line-height: normal;
-    padding-top: 125px;
     font-weight: bold;
-    font-size: 52px; }
+    font-size: 3.25rem; }
 
 .about {
   padding: 85px 0; }
@@ -384,7 +383,7 @@ ul {
 .main-title {
   font-family: "Montserrat-Bold";
   font-weight: bold;
-  font-size: 40px; }
+  font-size: 2.5rem; }
   .main-title::after {
     content: url("../img/wave.svg");
     display: block;
@@ -4072,6 +4071,8 @@ html {
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
+  body {
+    font-size: 80%; }
   .footer-menu__item {
     font-size: 11px;
     margin-left: 10px; }
@@ -4089,14 +4090,9 @@ html {
     font-size: 32px; } }
 
 @media (max-width: 991.98px) {
-  .header {
-    height: 400px;
-    -webkit-background-size: cover;
-            background-size: cover; }
   .main-button--width {
     width: 100%; }
   .main-title {
-    font-size: 28px;
     text-align: center; }
     .main-title::after {
       margin: 0 auto; }
@@ -4136,15 +4132,7 @@ html {
     font-size: 22px; }
   .modal-text {
     display: none; }
-  .check-lang {
-    font-size: 10px; }
-    .check-lang__dropdown {
-      font-size: 10px;
-      left: 50%; }
-    .check-lang__arrow {
-      margin-left: 2px; }
   .main-title {
-    font-size: 22px;
     text-align: center; }
     .main-title::after {
       padding-top: 15px;

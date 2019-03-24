@@ -11,6 +11,10 @@
 
 //Large: ≥992px
 @include media-breakpoint-down(lg) {
+  body {
+    font-size: 80%;
+  }
+
   // .header {
   //   height: 600px;
 
@@ -39,7 +43,7 @@
   //   }
   // }
 
-  
+
 .footer {
   &-menu {
     &__item {
@@ -71,18 +75,18 @@
 
 //Medium: ≥768px
 @include media-breakpoint-down(md) {
-  .header {
-    height: 400px;
-    background-size: cover;
+  // .header {
+  //   height: 400px;
+  //   background-size: cover;
 
-  }
+  // }
 
   .main {
     &-button--width {
       width: 100%;
     }
     &-title {
-      font-size: 28px;
+      // font-size: 28px;
       text-align: center;
       &::after {
         margin: 0 auto;
@@ -151,20 +155,9 @@
       }
   }
 
-  .check-lang {
-    font-size: 10px;
-    &__dropdown {
-      font-size: 10px;
-      left: 50%;  
-    }
-    &__arrow {
-      margin-left: 2px;
-    }
-  }
-
   .main {
     &-title {
-      font-size: 22px;
+
       text-align: center;
       &::after {
         padding-top: 15px;

@@ -57,14 +57,15 @@ ul {
 
 .header {
 	@include bgimage(Image1);
-	height: 800px;
+	min-height: 600px;
 	margin: 0 auto;
 	&__top {
 		display: flex;
 		flex-wrap: nowrap;
-		font-family: $opensans;
 		justify-content: space-between;
 		align-items: center;
+
+		font-family: $opensans;
 	}
 	&__logo {
 		width: 135px;
@@ -76,9 +77,11 @@ ul {
 	&-menu {
 		display: flex;
 		justify-content: space-between;
-		list-style: none;
+
 		padding: 0;
 		margin: 0;
+
+		list-style: none;
 			&__item {
 			margin-left: 20px;
 			a {
@@ -99,14 +102,13 @@ ul {
 	&__phone {
 		font-family: $montserrat;
 		font-weight: bold;
-
 	}
 	&__title {
 		font-family: $montserrat;
 		line-height: normal;
-		padding-top: 125px;
+		// padding-top: 125px;
 		font-weight: bold;
-		font-size: 52px;
+		font-size: 3.25rem;
 	}
 }
 
@@ -289,7 +291,7 @@ ul {
 .main-title {
 	font-family: $montserrat;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 2.5rem;	
 	&::after {
 		content: url('../img/wave.svg');
 		display: block;
