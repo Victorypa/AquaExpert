@@ -464,11 +464,14 @@ ul {
 .mobile {
   display: none; }
   .mobile__contacts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #fff;
     z-index: 1001; }
   .mobile__phone {
     font-weight: bold;
@@ -486,7 +489,7 @@ ul {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #EAE8E8;
+    background-color: #eae8e88a;
     z-index: 1001; }
     .mobile__burger.active {
       background-color: #fff; }
@@ -560,7 +563,7 @@ ul {
     left: 50%;
     top: 50%;
     margin-left: -12px;
-    background-color: #1DA1EC; }
+    background-color: #4c7a94; }
   .burger span::before {
     margin-top: -9px;
     -webkit-transition: all 0.2s;

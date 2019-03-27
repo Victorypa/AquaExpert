@@ -364,8 +364,8 @@ ul {
 	display: none;
 
 	&__contacts {
+		display: flex;
 		justify-content: space-between;
-		background-color: #fff;
 		z-index: 1001;
 	}
 	&__phone {
@@ -381,7 +381,7 @@ ul {
 		position: relative;
 		justify-content: space-between;
 		align-items: center;
-		background-color: #EAE8E8;
+		background-color: #eae8e88a;
 		&.active {
 			background-color: #fff;
 		}
@@ -455,7 +455,7 @@ ul {
 
 		margin-left: -12px;
 
-		background-color: #1DA1EC;
+		background-color: #4c7a94;
 	}
 	span::before {
 		margin-top: -9px;
