@@ -273,9 +273,14 @@ ul {
 }
 
 .main-button {
-	width: 163px;
+	max-width: 163px;
+	width: 100%;
+
 	font-weight: 600;
+	color: #fff;
+
 	padding: 10px;
+
 	background-color: #3b81a8;
 	border: none;
 	

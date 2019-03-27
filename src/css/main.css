@@ -2,50 +2,57 @@
   font-family: "roboto-example";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+  font-display: option;
+  src: url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff");
+  src: url("../fonts/RobotoRegular/RobotoRegular.woff2") format("woff2"); }
 
 @font-face {
   font-family: "roboto-example";
   font-weight: bold;
   font-style: normal;
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+  font-display: option;
+  src: url("../fonts/RobotoBold/RobotoBold.woff") format("woff");
+  src: url("../fonts/RobotoBold/RobotoBold.woff2") format("woff2"); }
 
 @font-face {
   font-family: "OpenSans";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/OpenSans/Regular/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans/Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/Regular/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/Regular/OpenSans-Regular.ttf") format("truetype"); }
+  font-display: option;
+  src: url("../fonts/OpenSans/Regular/OpenSans-Regular.woff") format("woff");
+  src: url("../fonts/OpenSans/Regular/OpenSans-Regular.woff2") format("woff2"); }
 
 @font-face {
   font-family: "OpenSans-SemiBold";
   font-weight: bold;
   font-style: normal;
-  src: url("../fonts/OpenSans/Regular/OpenSans-SemiBold.eot");
-  src: url("../fonts/OpenSans/Regular/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/Regular/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans/Regular/OpenSans-SemiBold.ttf") format("truetype"); }
+  font-display: option;
+  src: url("../fonts/OpenSans/Regular/OpenSans-SemiBold.woff") format("woff");
+  src: url("../fonts/OpenSans/Regular/OpenSans-SemiBold.woff2") format("woff2"); }
 
 @font-face {
   font-family: "Montserrat-Bold";
   font-weight: bold;
   font-style: normal;
-  src: url("../fonts/Montserrat/Bold/Montserrat-Bold.eot");
-  src: url("../fonts/Montserrat/Bold/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Bold/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Bold/Montserrat-Bold.ttf") format("truetype"); }
+  font-display: option;
+  src: url("../fonts/Montserrat/Bold/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat/Bold/Montserrat-Bold.woff2") format("woff2"); }
 
 @font-face {
   font-family: "Amiri-Regular";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/Amiri/Regular/Amiri-Regular.eot");
-  src: url("../fonts/Amiri/Regular/Amiri-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Amiri/Regular/Amiri-Regular.woff") format("woff"), url("../fonts/Amiri/Regular/Amiri-Regular.ttf") format("truetype"); }
+  font-display: option;
+  src: url("../fonts/Amiri/Regular/Amiri-Regular.woff") format("woff");
+  src: url("../fonts/Amiri/Regular/Amiri-Regular.woff2") format("woff2"); }
 
 @font-face {
   font-family: "Amiri-Bold";
   font-weight: bold;
   font-style: normal;
-  src: url("../fonts/Amiri/Bold/Amiri-Bold.eot");
-  src: url("../fonts/Amiri/Bold/Amiri-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Amiri/Bold/Amiri-Bold.woff") format("woff"), url("../fonts/Amiri/Bold/Amiri-Bold.ttf") format("truetype"); }
+  font-display: option;
+  src: url("../fonts/Amiri/Bold/Amiri-Bold.woff") format("woff");
+  src: url("../fonts/Amiri/Bold/Amiri-Bold.woff2") format("woff2"); }
 
 ::-webkit-input-placeholder {
   color: #ccc;
@@ -365,8 +372,10 @@ ul {
     opacity: 0; } }
 
 .main-button {
-  width: 163px;
+  max-width: 163px;
+  width: 100%;
   font-weight: 600;
+  color: #fff;
   padding: 10px;
   background-color: #3b81a8;
   border: none; }
