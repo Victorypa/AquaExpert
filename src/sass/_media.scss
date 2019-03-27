@@ -8,7 +8,6 @@
 
 }
   
-
 //Large: ≥992px
 @include media-breakpoint-down(lg) {
 
@@ -115,14 +114,6 @@
   
   .mobile {
     display: block;
-  }
-
-  .mobile-menu {
-    .user-nav {
-      &__logo {
-        width: 124px;
-      }
-    }
   }
 
   .modal {
