@@ -8,9 +8,9 @@
 
 html, body {
 	height: 100%;
-		// * {
-		// 	outline: 1px solid red;
-		// }
+	// * {
+	// 	outline: 1px solid red;
+	// }
 }
 
 body {
@@ -68,8 +68,7 @@ ul {
 		font-family: $opensans;
 	}
 	&__logo {
-		width: 135px;
-		height: 40px;
+		width: 135px; 
 		img {
 			@include img100;
 		}
@@ -84,6 +83,7 @@ ul {
 		list-style: none;
 			&__item {
 			margin-left: 20px;
+			letter-spacing: 2px;
 			a {
 				color: #262626;
 				&:hover {
@@ -93,6 +93,9 @@ ul {
 		}
 	}
 	&__contacts {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 		text-align: right;
 		a {
 			display: block;
@@ -106,7 +109,7 @@ ul {
 	&__title {
 		font-family: $montserrat;
 		line-height: normal;
-		// padding-top: 125px;
+		padding-top: 125px;
 		font-weight: bold;
 		font-size: 3.25rem;
 	}
@@ -273,22 +276,25 @@ ul {
 }
 
 .main-button {
-	max-width: 163px;
-	width: 100%;
+	max-width: 140px;
 
 	font-weight: 600;
 	color: #fff;
 
 	padding: 10px;
 
-	background-color: #3b81a8;
+	background-color:#4c7a94;
 	border: none;
 	
 	&--width {
 		width: 261px;
 	}
+	@include transition-animation;
 	&:hover {
 		@include button-bg(#3b81a8);
+	}
+	&:focus {
+		outline: none;
 	}
 
 }

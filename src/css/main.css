@@ -137,8 +137,7 @@ ul {
             align-items: center;
     font-family: "OpenSans"; }
   .header__logo {
-    width: 135px;
-    height: 40px; }
+    width: 135px; }
     .header__logo img {
       width: 100%;
       height: 100%; }
@@ -155,12 +154,24 @@ ul {
     margin: 0;
     list-style: none; }
     .header-menu__item {
-      margin-left: 20px; }
+      margin-left: 20px;
+      letter-spacing: 2px; }
       .header-menu__item a {
         color: #262626; }
         .header-menu__item a:hover {
           text-decoration: underline; }
   .header__contacts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     text-align: right; }
     .header__contacts a {
       display: block;
@@ -171,6 +182,7 @@ ul {
   .header__title {
     font-family: "Montserrat-Bold";
     line-height: normal;
+    padding-top: 125px;
     font-weight: bold;
     font-size: 3.25rem; }
 
@@ -372,13 +384,15 @@ ul {
     opacity: 0; } }
 
 .main-button {
-  max-width: 163px;
-  width: 100%;
+  max-width: 140px;
   font-weight: 600;
   color: #fff;
   padding: 10px;
-  background-color: #3b81a8;
-  border: none; }
+  background-color: #4c7a94;
+  border: none;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
   .main-button--width {
     width: 261px; }
   .main-button:hover {
@@ -388,6 +402,8 @@ ul {
       -webkit-transition: 0.2s ease-in;
       -o-transition: 0.2s ease-in;
       transition: 0.2s ease-in; }
+  .main-button:focus {
+    outline: none; }
 
 .main-title {
   font-family: "Montserrat-Bold";
@@ -4080,8 +4096,8 @@ html {
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
-  body {
-    font-size: 80%; }
+  .header-menu__item {
+    margin-left: 5px; }
   .footer-menu__item {
     font-size: 11px;
     margin-left: 10px; }
@@ -4099,12 +4115,15 @@ html {
     font-size: 32px; } }
 
 @media (max-width: 991.98px) {
-  .main-button--width {
-    width: 100%; }
-  .main-title {
-    text-align: center; }
-    .main-title::after {
-      margin: 0 auto; }
+  body {
+    font-size: 80%; }
+  .container {
+    width: 100%;
+    max-width: none; }
+  .header__contacts {
+    padding: 0; }
+  .main-button {
+    max-width: 120px; }
   .main-content {
     text-align: center; }
   .interaction {
@@ -4117,20 +4136,8 @@ html {
       margin-bottom: 30px; } }
 
 @media (max-width: 767.98px) {
-  .header {
-    background-position-x: 85%;
-    height: 500px; }
-    .header__title {
-      padding-top: 40px;
-      font-size: 22px;
-      text-align: center; }
-    .header__top {
-      display: none; }
-    .header__lang {
-      -webkit-box-pack: end;
-      -webkit-justify-content: flex-end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; }
+  .header__top {
+    display: none; }
   .burger {
     display: block; }
   .mobile {
@@ -4174,3 +4181,6 @@ html {
     width: 100%; } }
 
 /*==========  Mobile First  ==========*/
+@media (min-width: 768px) {
+  .main-button {
+    width: 100%; } }

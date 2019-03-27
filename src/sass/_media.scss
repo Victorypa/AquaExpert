@@ -11,37 +11,12 @@
 
 //Large: ≥992px
 @include media-breakpoint-down(lg) {
-  body {
-    font-size: 80%;
+
+  .header {
+    &-menu__item {
+      margin-left: 5px;
   }
-
-  // .header {
-  //   height: 600px;
-
-  //   &-menu {
-  //     &__item {
-  //       font-size: 11px;
-  //       margin-left: 10px;
-  //     }
-  //   }
-  //   &__logo {
-  //     width: 120px;
-  //   }
-  //   &__phone {
-  //     font-size: 14px;
-  //   }
-  //   .main-button {
-  //     width: 100px;
-  //     font-size: 10px;  
-  //     margin: 0 5px;
-  //   }
-  //   &__contacts {
-  //     font-size: 10px;
-  //   }
-  //   &__title {
-  //     font-size: 32px;
-  //   }
-  // }
+ }
 
 
 .footer {
@@ -75,24 +50,37 @@
 
 //Medium: ≥768px
 @include media-breakpoint-down(md) {
-  // .header {
-  //   height: 400px;
-  //   background-size: cover;
-
-  // }
-
-  .main {
-    &-button--width {
-      width: 100%;
-    }
-    &-title {
-      // font-size: 28px;
-      text-align: center;
-      &::after {
-        margin: 0 auto;
-      }
-    }
+  body {
+    font-size: 80%;
   }
+
+  .container {
+    width: 100%;
+    max-width: none;
+ }
+
+ .header {
+   &__contacts {
+     padding: 0;
+   }
+ }
+
+ .main-button {
+   max-width: 120px;
+ }
+
+  // .main {
+  //   &-button--width {
+  //     width: 100%;
+  //   }
+  //   &-title {
+  //     // font-size: 28px;
+  //     text-align: center;
+  //     &::after {
+  //       margin: 0 auto;
+  //     }
+  //   }
+  // }
 
   .main-content {
     text-align: center;
@@ -114,19 +102,10 @@
 
 //Small: ≥576px
 @include media-breakpoint-down(sm) {
+  
   .header {
-    background-position-x: 85%;
-    height: 500px;
-    &__title {
-      padding-top: 40px;
-      font-size: 22px;
-      text-align: center;
-    }
     &__top {
       display: none;
-    }
-    &__lang {
-      justify-content: flex-end;
     }
   }
 
@@ -229,7 +208,11 @@
 
 //Medium: ≤768px
 @include media-breakpoint-up(md) {
-
+  .main {
+    &-button {
+      width: 100%;
+    }
+  }
 }
 
 //Large: ≤992px
