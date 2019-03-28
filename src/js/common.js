@@ -1,7 +1,7 @@
 $(document).ready(function(){
   let burger          = $('.burger'),
       mobileMenu      = $('.mobile__dropdown'),
-      mobileBurg      = $('.mobile__burger'),          
+      mobileBurg      = $('.mobile__menu'),          
       body            = $('body');
 
   $('body').delegate('.burger','click',  function(){

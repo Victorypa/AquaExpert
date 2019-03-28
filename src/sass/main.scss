@@ -120,20 +120,10 @@ ul {
 	&__wrapper {
 		display: flex;
 	}
-	&__title {
-		font-family: $montserrat;
-		font-weight: bold;
-		font-size: 40px;
-
-	}
 	&__img {
 		margin-left: auto;
 		max-height: 420px;
     height: 100%;
-		&--tablet {
-			width: 80%;
-			margin: 30px auto;
-		}
 		img {
 			@include img100;
 		}
@@ -376,7 +366,7 @@ ul {
 	&__logo {
 		width: 124px;
 	}
-	&__burger {
+	&__menu {
 		height: 50px;
 		position: relative;
 		justify-content: space-between;

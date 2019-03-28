@@ -193,17 +193,10 @@ ul {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  .about__title {
-    font-family: "Montserrat-Bold";
-    font-weight: bold;
-    font-size: 40px; }
   .about__img {
     margin-left: auto;
     max-height: 420px;
     height: 100%; }
-    .about__img--tablet {
-      width: 80%;
-      margin: 30px auto; }
     .about__img img {
       width: 100%;
       height: 100%; }
@@ -478,7 +471,7 @@ ul {
     font-size: 14px; }
   .mobile__logo {
     width: 124px; }
-  .mobile__burger {
+  .mobile__menu {
     height: 50px;
     position: relative;
     -webkit-box-pack: justify;
@@ -491,7 +484,7 @@ ul {
             align-items: center;
     background-color: #eae8e88a;
     z-index: 1001; }
-    .mobile__burger.active {
+    .mobile__menu.active {
       background-color: #fff; }
   .mobile__lang {
     font-size: 10px; }
@@ -4099,22 +4092,7 @@ html {
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   .header-menu__item {
-    margin-left: 5px; }
-  .footer-menu__item {
-    font-size: 11px;
-    margin-left: 10px; }
-  .footer__logo {
-    width: 120px; }
-  .footer__phone {
-    font-size: 14px; }
-  .footer .main-button {
-    width: 100px;
-    font-size: 10px;
-    margin: 0 5px; }
-  .footer__contacts {
-    font-size: 10px; }
-  .footer__title {
-    font-size: 32px; } }
+    margin-left: 5px; } }
 
 @media (max-width: 991.98px) {
   body {
@@ -4124,18 +4102,20 @@ html {
     max-width: none; }
   .header__contacts {
     padding: 0; }
+  .main-title {
+    text-align: center; }
+    .main-title::after {
+      padding-top: 15px;
+      margin: 0 auto; }
+  .main-content {
+    text-align: center;
+    padding: 0 15px; }
   .main-button {
     max-width: 120px; }
-  .main-content {
-    text-align: center; }
-  .interaction {
-    height: 450px; }
-  .about {
-    padding: 30px 0; }
-    .about__img {
-      width: 80%;
-      margin: 0 auto;
-      margin-bottom: 30px; } }
+  .about__img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px; } }
 
 @media (max-width: 767.98px) {
   .header__top {
@@ -4146,16 +4126,8 @@ html {
     font-size: 22px; }
   .modal-text {
     display: none; }
-  .main-title {
-    text-align: center; }
-    .main-title::after {
-      padding-top: 15px;
-      margin: 0 auto; }
-  .main-content {
-    text-align: center;
-    padding: 0 15px; }
-  .about, .request {
-    padding: 15px 0; }
+  .about, .request, .interaction {
+    padding: 30px 0; }
   .interaction {
     position: relative;
     margin-top: 225px;
