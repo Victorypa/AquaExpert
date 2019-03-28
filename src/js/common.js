@@ -1,6 +1,6 @@
 $(document).ready(function(){
   let burger          = $('.burger'),
-      mobileMenu      = $('.mobile__menu'),
+      mobileMenu      = $('.mobile__dropdown'),
       mobileBurg      = $('.mobile__burger'),          
       body            = $('body');
 
