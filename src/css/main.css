@@ -201,14 +201,14 @@ ul {
       width: 100%;
       height: 100%; }
 
-.interaction {
+.cooperation {
   background-image: url("../img/Image3.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center center;
   height: 670px; }
-  .interaction__wrapper {
+  .cooperation__wrapper {
     padding: 20px 30px;
     background-color: #fff;
     margin-top: 40px; }
@@ -4126,13 +4126,13 @@ html {
     font-size: 22px; }
   .modal-text {
     display: none; }
-  .about, .request, .interaction {
+  .about, .request, .cooperation {
     padding: 30px 0; }
-  .interaction {
+  .cooperation {
     position: relative;
     margin-top: 225px;
     height: 390px; }
-    .interaction__wrapper {
+    .cooperation__wrapper {
       position: absolute;
       top: -286px;
       left: 0;
