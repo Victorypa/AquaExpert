@@ -8,9 +8,9 @@
 
 html, body {
 	height: 100%;
-	* {
-		outline: 1px solid red;
-	}
+	// * {
+	// 	outline: 1px solid red;
+	// }
 }
 
 body {
@@ -122,6 +122,7 @@ ul {
 		&__lang {
 			min-width: auto;
 			font-size: 0.8rem;
+			text-align: center;
 		}
 	}
 
@@ -391,6 +392,16 @@ ul {
 	&__lang {
 		font-size: 10px;
 	}
+
+	.dropdown {
+		text-align: center;
+		&-menu {
+			a {
+				display: block;
+			}		
+		}
+	}
+
 	&__dropdown {
 		width: 100%;
 		transform-origin: top;

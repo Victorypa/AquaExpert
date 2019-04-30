@@ -74,8 +74,6 @@
 
 html, body {
   height: 100%; }
-  html *, body * {
-    outline: 1px solid red; }
 
 body {
   font-size: 100%;
@@ -193,7 +191,8 @@ ul {
 
 .dropdown__lang {
   min-width: auto;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  text-align: center; }
 
 .about {
   padding: 85px 0; }
@@ -497,6 +496,10 @@ ul {
       background-color: #fff; }
   .mobile__lang {
     font-size: 10px; }
+  .mobile .dropdown {
+    text-align: center; }
+    .mobile .dropdown-menu a {
+      display: block; }
   .mobile__dropdown {
     width: 100%;
     -webkit-transform-origin: top;
