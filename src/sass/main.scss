@@ -8,9 +8,9 @@
 
 html, body {
 	height: 100%;
-	// * {
-	// 	outline: 1px solid red;
-	// }
+	* {
+		outline: 1px solid red;
+	}
 }
 
 body {
@@ -114,6 +114,16 @@ ul {
 		font-size: 3.25rem;
 	}
 }
+
+.dropdown {
+.dropdown-menu[x-placement^=bottom] {
+			right: 0;
+		}
+		&__lang {
+			min-width: auto;
+			font-size: 0.8rem;
+		}
+	}
 
 .about {
 	padding: 85px 0;

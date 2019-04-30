@@ -74,6 +74,8 @@
 
 html, body {
   height: 100%; }
+  html *, body * {
+    outline: 1px solid red; }
 
 body {
   font-size: 100%;
@@ -185,6 +187,13 @@ ul {
     padding-top: 125px;
     font-weight: bold;
     font-size: 3.25rem; }
+
+.dropdown .dropdown-menu[x-placement^=bottom] {
+  right: 0; }
+
+.dropdown__lang {
+  min-width: auto;
+  font-size: 0.8rem; }
 
 .about {
   padding: 85px 0; }
