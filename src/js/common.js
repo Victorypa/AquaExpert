@@ -34,7 +34,3 @@ for (let i = 0; i < 5; i++) {
   container.appendChild(bubble)
   style.animationDelay = i + 0.5 + 's' 
 }
-
-$(function(){
-  $('.selectpicker').selectpicker();
-});

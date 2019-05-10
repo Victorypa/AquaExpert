@@ -263,7 +263,6 @@ ul {
     transform:translate(-10px,-40px) 
   }
   
-  
   60% {
     transform:translate(-10px,-60px) 
   }
@@ -494,18 +493,17 @@ ul {
 }
 
 .footer {
-	max-width: 1920px;
 	margin: 0 auto;
 	&__nav {
 		display: flex;
 		flex-wrap: nowrap;
-		font-family: $opensans;
 		justify-content: space-between;
 		align-items: center;
+
+		font-family: $opensans;
 	}
 	&__logo {
-		width: 135px;
-		height: 40px;
+		width: 135px; 
 		img {
 			@include img100;
 		}
@@ -513,39 +511,33 @@ ul {
 	&-menu {
 		display: flex;
 		justify-content: space-between;
-		list-style: none;
+
 		padding: 0;
 		margin: 0;
-		&__item {
-		margin-left: 20px;
-		a {
-			color: #262626;
-			&:hover {
-				text-decoration: underline;
+
+		list-style: none;
+			&__item {
+			margin-left: 20px;
+			letter-spacing: 2px;
+			a {
+				color: #262626;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
-		}
-		}
-	}
-	&__contacts {
-		text-align: right;
-		a {
-			display: block;
-			color: #262626;
 		}
 	}
 	&__phone {
-		font-family: $montserrat;
-		font-weight: bold;
-		font-size: 20px;
-	}
-	&__title {
-		font-family: $montserrat;
-		line-height: normal;
-		padding-top: 125px;
-		font-weight: bold;
-		font-size: 52px;
-	}
+		display: block;
 
+		font-family: $montserrat;
+		font-weight: bold;
+		color: #262626;
+		@include transition-animation;
+		&:hover {
+			color: #4c7a94;
+		}
+	}
 }
 
 .container-fluid {
